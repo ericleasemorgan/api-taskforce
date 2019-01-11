@@ -3,6 +3,8 @@
 # wos-search.py - given a session id, a NetID, and an author's name, search Web of Science and output NetID, WOS identifier, and DOI
 
 # Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
 # January 11, 2019 - based on good work by Lisa Stienbarger and Mark Dehmlow
 
 

@@ -3,6 +3,8 @@
 # db-initialize.sh - create an SQLite database
 
 # Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
 # January 11, 2019 - first cut
 
 

@@ -3,6 +3,8 @@
 # wos-open.py - return a Web of Science session id
 
 # Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
 # January 11, 2019 - based on good work by Lisa Stienbarger and Mark Dehmlow
 
 

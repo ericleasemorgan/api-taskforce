@@ -3,6 +3,8 @@
 # faculty2db.sh - given a file of faculty names, etc, fill a database
 
 # Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
 # January 11, 2019 - first cut but need to escape the input
 
 

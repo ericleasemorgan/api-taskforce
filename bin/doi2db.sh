@@ -3,6 +3,8 @@
 # doi2db.sh - fill the database with doi's
 
 # Eric Lease Morgan <emorgan@nd.edu>
+# (c) University of Notre Dame; distributed under a GNU Public License
+
 # January 11, 2019 - first cut but need to escape the input
 
 
