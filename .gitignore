@@ -1,0 +1,4 @@
+.DS_Store
+etc/library.db
+logs/*.log
+results/*.tsv
