@@ -2,3 +2,4 @@
 etc/library.db
 logs/*.log
 results/*.tsv
+local
