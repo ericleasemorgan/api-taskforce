@@ -16,7 +16,7 @@ BIBLIOGRAPHICS='./bibliographics'
 
 # sanity check
 if [[ -z "$1" ]]; then
-	echo "Usage: $0 <netid|doi>" >&2
+	echo "Usage: $0 <'netid|doi'>" >&2
 	exit
 fi
 
