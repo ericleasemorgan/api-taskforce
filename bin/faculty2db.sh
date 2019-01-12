@@ -13,7 +13,7 @@ DB='./etc/library.db'
 TSV='./etc/faculty.tsv'
 IFS=$'\t'
 
-# process each line in the database
+# process each line in the tsv file
 while read RECORD; do
   
 	# parse
