@@ -22,8 +22,10 @@ while read RECORD; do
 	FIRSTNAME="${FIELDS[3]}"
 	LASTNAME="${FIELDS[4]}"
 		
-	# debug and do the work
+	# re-initailize
 	SQL="INSERT INTO faculty ( 'netid', 'firstname', 'lastname' ) VALUES ( '$NETID', '$FIRSTNAME', '$LASTNAME' );"
+	
+	# debug and do the work
 	printf "$SQL\n" >&2
 	echo $SQL | sqlite3 $DB
 	
