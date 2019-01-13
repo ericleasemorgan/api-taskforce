@@ -12,10 +12,15 @@
 DB='./etc/library.db'
 IFS=$'\t'
 RESULTS='./results/*.tsv'
+TRANSACTIONS='./sql/initialize-bibliographics.sql'
+
+# initialize
+echo "BEGIN TRANSACTION;" > $TRANSACTIONS
 
 # process each tsv file in the results directory
 for FILE in $RESULTS; do
 
+	# process each line (record) in the given file
 	while read RECORD; do
 	
 		# parse
@@ -24,14 +29,24 @@ for FILE in $RESULTS; do
 		WOSID="${FIELDS[1]}"
 		DOI="${FIELDS[2]}"
 		
-		# build the sql, debug, and to the work
-		SQL="INSERT INTO dois ( 'netid', 'wosid', 'doi' ) VALUES ( '$NETID', '$WOSID', '$DOI' );"
-		printf "$SQL\n" >&2
-		echo $SQL | sqlite3 $DB
+		# check for doi and re-initialize sql
+		if [[ $DOI > '' ]]; then
+			SQL="INSERT INTO bibliographics ( 'netid', 'wosid', 'doi' ) VALUES ( '$NETID', '$WOSID', '$DOI' );"
+		else
+			SQL="INSERT INTO bibliographics ( 'netid', 'wosid' ) VALUES ( '$NETID', '$WOSID' );"
+		fi
+		
+		# debug and update
+		echo $SQL >&2
+		echo $SQL >> $TRANSACTIONS
 		
 	done < $FILE
 	
 done
 
-# finished
+# close transaction
+echo "END TRANSACTION;" >> $TRANSACTIONS
+
+# do the work and done
+cat $TRANSACTIONS | sqlite3 $DB
 exit
