@@ -4,4 +4,4 @@ etc/library.db
 local
 logs/*.log
 results/*.tsv
-sql/*
+sql/*.sql
