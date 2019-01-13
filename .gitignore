@@ -1,7 +1,7 @@
 .DS_Store
-bibliographics/*.tsv
+cache/bibliographics/*.tsv
+cache/results/*.tsv
 etc/library.db
 local
 logs/*.log
-results/*.tsv
 sql/*.sql

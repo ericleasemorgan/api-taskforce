@@ -10,7 +10,7 @@
 
 # configure
 DB='./etc/library.db'
-RESULTS='./bibliographics/*.tsv'
+RESULTS='./caches/bibliographics/*.tsv'
 TRANSACTIONS='./sql/update-bibliographics.sql'
 BIBLIOGRAPHICS2DB='./bin/bibliographics2db.pl'
 

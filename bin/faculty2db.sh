@@ -12,7 +12,7 @@
 # configure
 DB='./etc/library.db'
 IFS=$'\t'
-TRANSACTIONS='./sql/faculty-updates.sql'
+TRANSACTIONS='./sql/update-faculty.sql'
 TSV='./etc/faculty.tsv'
 
 # initialize
@@ -26,9 +26,17 @@ while read RECORD; do
 	NETID="${FIELDS[0]}"
 	FIRSTNAME="${FIELDS[3]}"
 	LASTNAME="${FIELDS[4]}"
-		
+	DEPARTMENT="${FIELDS[5]}"
+	COLLEGE="${FIELDS[6]}"
+	
+	# escape
+	COLLEGE=$( echo $COLLEGE | sed "s/'/''/g" )
+	DEPARTMENT=$( echo $DEPARTMENT | sed "s/'/''/g" )
+	FIRSTNAME=$( echo $FIRSTNAME | sed "s/'/''/g" )
+	LASTNAME=$( echo $LASTNAME | sed "s/'/''/g" )
+	
 	# re-initialize, debug, and update
-	SQL="UPDATE faculty SET firstname='$FIRSTNAME', lastname='$LASTNAME' WHERE netid='$NETID';"
+	SQL="UPDATE faculty SET firstname='$FIRSTNAME', lastname='$LASTNAME', college='$COLLEGE', department='$DEPARTMENT' WHERE netid='$NETID';"
 	echo $SQL >&2
 	echo $SQL >> $TRANSACTIONS
 	

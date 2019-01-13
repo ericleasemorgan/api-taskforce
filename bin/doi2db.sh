@@ -11,7 +11,7 @@
 # configure
 DB='./etc/library.db'
 IFS=$'\t'
-RESULTS='./results/*.tsv'
+RESULTS='./caches/results/*.tsv'
 TRANSACTIONS='./sql/initialize-bibliographics.sql'
 
 # initialize

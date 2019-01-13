@@ -13,7 +13,7 @@ DB='./etc/library.db'
 SQL="SELECT netid, firstname, lastname FROM faculty;"
 IFS='|'
 WOSSEARCH='./bin/wos-search.py'
-WOSRESULTS='./results'
+WOSRESULTS='./caches/results'
 WOSLOGS='./logs'
 
 # sanity check
@@ -40,8 +40,12 @@ echo $SQL | sqlite3 $DB | while read RECORD; do
 	
 	# debug and do the work
 	echo $SID $NETID "'$LASTNAME, $FIRSTNAME'" >&2
-	$WOSSEARCH $SID $NETID "'$LASTNAME, $FIRSTNAME'" > $OUTPUT 2> $LOG
-
+	
+	# do the work, conditionally
+	if [[ ! -f $OUTPUT ]]; then
+		$WOSSEARCH $SID $NETID "'$LASTNAME, $FIRSTNAME'" > $OUTPUT 2> $LOG
+    fi
+    
 done
 
 # finished

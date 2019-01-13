@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # doi2bibliographics.sh - a front-end to doi2bibliographics.pl
-# usage: echo "select netid, doi from dois where doi > ' ' limit 1000;" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
+# usage: echo "select netid, doi from dois;" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
 
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
@@ -12,7 +12,7 @@
 # configure
 IFS='|'
 DOI2BIBLIOGRAPHICS='./bin/doi2bibliographics.pl'
-BIBLIOGRAPHICS='./bibliographics'
+BIBLIOGRAPHICS='./caches/bibliographics'
 
 # sanity check
 if [[ -z "$1" ]]; then
@@ -32,9 +32,11 @@ FILE="$NETID-$DOI"
 FILE=$( echo $FILE | tr -d ' ' | tr '.' '-' | tr '/' '_' | tr '+' '_' )
 OUTPUT="$BIBLIOGRAPHICS/$FILE.tsv"
 
-# debug and do the work
+# debug and do the work, conditionally
 printf "$NETID\t$DOI\t$OUTPUT\n" >&2
-$DOI2BIBLIOGRAPHICS $NETID $DOI > $OUTPUT
+if [[ ! -f $OUTPUT ]]; then
+	$DOI2BIBLIOGRAPHICS $NETID $DOI > $OUTPUT
+fi
 
 # finished
 exit
