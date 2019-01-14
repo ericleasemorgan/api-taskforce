@@ -9,23 +9,29 @@ As of right now, there are only four "movements" in the suite. The first one rea
 To "play" the suite, the following "score" is provided, but your milage will probably vary.
 
 ### First movemenet - "Initialization"
-  * ./bin/clean.sh
-  * ./bin/db-create.sh
-  * ./bin/db-initialize.sh
-  * ./bin/faculty2db.sh
+  * ./bin/clean.sh - erase any work done previously
+  * ./bin/db-create.sh - generate an empty database
+  * ./bin/db-initialize.sh - fill the database with NetId's
+  * ./bin/faculty2db.sh - update the database with names, departments, colleges, etc.
  
 ### Second movement - "The Search"
-  * ./bin/wos-open.py &lt;password&gt;
-  * ./bin/wos-search.sh &lt;sid&gt;
-  * ./bin/wos-close.py &lt;sid&gt;
-  * ./bin/doi2db.sh
+  * ./bin/wos-open.py &lt;password&gt; - initialize a connection to Web of Science
+  * ./bin/wos-search.sh &lt;sid&gt; - find all citations for the faculty
+  * ./bin/wos-close.py &lt;sid&gt; - be polite; terminate the Web of Science connection
+  * ./bin/doi2db.sh - fill the database with the cited identifiers (DOI's)
 
 ### Third movement - "Resolutions"
-  * echo "select netid, doi from bibliographics where doi>'';" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
-  * ./bin/bibliographics2db.sh
+  * echo "select netid, doi from bibliographics where doi>'';" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {} - acquire as bibliogrpahic data assoicated with each DOI
+  * ./bin/bibliographics2db.sh - update the database accordingly
   
 ### Fourth movement - "Summarization"
-  * cat ./etc/reports.sql | sqlite3 ./etc/library.db | less
+  * cat ./etc/reports.sql | sqlite3 ./etc/library.db - generate a set of reports against the database
+ 
+ ## To do
+ There are a number of things to do, listed in no priority order:
+ 
+   * create a more accurate &amp; comprehensive list of faculty
+   * 
   
 ---
 Eric Lease Morgan &lt;emorgan@nd.edu&gt;  
