@@ -9,10 +9,10 @@ As of right now, there are only four "movements" in the suite. The first one rea
 To "play" the suite, the following "score" is provided, but your milage will probably vary.
 
 ### First movement - "Initialization"
-  * ./bin/clean.sh - erase any work done previously
-  * ./bin/db-create.sh - generate an empty database
-  * ./bin/db-initialize.sh - fill the database with NetId's
-  * ./bin/faculty2db.sh - update the database with names, departments, colleges, etc.
+  * `./bin/clean.sh` - erase any work done previously
+  * `./bin/db-create.sh` - generate an empty database
+  * `./bin/db-initialize.sh` - fill the database with NetId's
+  * `./bin/faculty2db.sh` - update the database with names, departments, colleges, etc.
  
 ### Second movement - "The Search"
   * ./bin/wos-open.py &lt;password&gt; - initialize a connection to Web of Science
