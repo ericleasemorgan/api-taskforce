@@ -15,9 +15,9 @@ To "play" the suite, the following "score" is provided, but your milage will pro
   * `./bin/faculty2db.sh` - update the database with names, departments, colleges, etc.
  
 ### Second movement - "The Search"
-  * `./bin/wos-open.py &lt;password&gt;` - initialize a connection to Web of Science
-  * `./bin/wos-search.sh &lt;sid&gt;` - find all citations for the faculty
-  * `./bin/wos-close.py &lt;sid&gt;` - be polite; terminate the Web of Science connection
+  * `./bin/wos-open.py <password>` - initialize a connection to Web of Science
+  * `./bin/wos-search.sh <sid>` - find all citations for the faculty
+  * `./bin/wos-close.py <sid>` - be polite; terminate the Web of Science connection
   * `./bin/doi2db.sh` - fill the database with the cited identifiers (DOI's)
 
 ### Third movement - "Resolutions"
