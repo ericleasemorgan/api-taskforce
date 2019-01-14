@@ -8,7 +8,7 @@ As of right now, there are only four "movements" in the suite. The first one rea
 
 To "play" the suite, the following "score" is provided, but your milage will probably vary.
 
-### First movemenet - "Initialization"
+### First movement - "Initialization"
   * ./bin/clean.sh - erase any work done previously
   * ./bin/db-create.sh - generate an empty database
   * ./bin/db-initialize.sh - fill the database with NetId's
