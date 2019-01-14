@@ -21,7 +21,7 @@ To "play" the suite, the following "score" is provided, but your milage will pro
   * ./bin/doi2db.sh - fill the database with the cited identifiers (DOI's)
 
 ### Third movement - "Resolutions"
-  * echo "select netid, doi from bibliographics where doi>'';" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {} - acquire as bibliogrpahic data assoicated with each DOI
+  * ./bin/resolve.sh - acquire bibliographic data assoicated with each DOI
   * ./bin/bibliographics2db.sh - update the database accordingly
   
 ### Fourth movement - "Summarization"
