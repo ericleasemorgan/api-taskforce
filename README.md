@@ -47,7 +47,7 @@ To "play" the suite, the following "score" is provided, but like any performance
   
  ## Epilogue
 
-*Writing softare is a creative process. It can be as creative as writing a symphony.*
+*"Writing softare can be as creative as writing a symphony."*
 
 ---
 Eric Lease Morgan &lt;emorgan@nd.edu&gt;  
