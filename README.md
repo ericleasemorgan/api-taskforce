@@ -37,6 +37,7 @@ To "play" the suite, the following "score" is provided, but your milage will pro
    * learn how to limit citation (author) searches to Notre Dame only
    * do author disambiguation
    * save more-comprehensive bibliographic data
+   * tweak the Second Movement so the SID is shared between processes
    * other duties as assigned
   
 ---
