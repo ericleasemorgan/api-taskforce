@@ -45,6 +45,10 @@ To "play" the suite, the following "score" is provided, but like any performance
    * write "one script to rule the all"; make everything go with one command
    * other duties as assigned
   
+ ## Epilogue
+
+*Writing softare is a creative process. It can be as creative as writing a symphony.*
+
 ---
 Eric Lease Morgan &lt;emorgan@nd.edu&gt;  
 January 13, 2019
