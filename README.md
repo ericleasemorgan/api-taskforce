@@ -25,7 +25,7 @@ To "play" the suite, the following "score" is provided, but your milage will pro
   * ./bin/bibliographics2db.sh - update the database accordingly
   
 ### Fourth movement - "Summarization"
-  * cat ./etc/reports.sql | sqlite3 ./etc/library.db - generate a set of reports against the database
+  * cat ./etc/reports.sql | sqlite3 ./etc/library.db - generate a set of reports against the database, and a sample report is located at etc/report.txt
  
  ## To do
  There are a number of things to do, listed in no priority order:
