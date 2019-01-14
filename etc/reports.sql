@@ -12,7 +12,7 @@ SELECT '';
 SELECT '';
 SELECT "Reports";
 SELECT "=======";
-SELECT "This is a set of simple & example reports that can be applied to the API Taskforce database.";
+SELECT "This is a set of simple & example reports that have be applied to the API Taskforce database.";
 SELECT '';
 SELECT '';
 
