@@ -4,9 +4,13 @@ This is a "suite" of scripts used to query bibliographic databases (indexes) and
 
 As of right now, there are only four "movements" in the suite. The first one reads a specifically shaped tab-delimited text file and fills up a simple &amp; rudimentary but relational SQLite database. The second one is more sophisticated. Given a password, it opens up a session to Web of Science's backend, queries the index for names, closes the session, and populates the database with the set of found DOI's. The third movement resolves the DOI's, parses out bibliographics, and updates the database. The fourth, and as of now, final movement is a set of SQL queries used to query the resulting database.
 
+## Instrumentation
+
+This suite is written for a number of "instruments", including: Linux, Bash, Python, Perl, SQL, and bits of XPath.
+
 ## Performance
 
-To "play" the suite, the following "score" is provided, but your milage will probably vary.
+To "play" the suite, the following "score" is provided, but like any performance, playing the suite required practice.
 
 ### First Movement - "Prelude"
   * `./bin/clean.sh` - erase any work done previously
