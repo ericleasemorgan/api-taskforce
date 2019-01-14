@@ -15,17 +15,17 @@ To "play" the suite, the following "score" is provided, but your milage will pro
   * `./bin/faculty2db.sh` - update the database with names, departments, colleges, etc.
  
 ### Second movement - "The Search"
-  * ./bin/wos-open.py &lt;password&gt; - initialize a connection to Web of Science
-  * ./bin/wos-search.sh &lt;sid&gt; - find all citations for the faculty
-  * ./bin/wos-close.py &lt;sid&gt; - be polite; terminate the Web of Science connection
-  * ./bin/doi2db.sh - fill the database with the cited identifiers (DOI's)
+  * `./bin/wos-open.py &lt;password&gt;` - initialize a connection to Web of Science
+  * `./bin/wos-search.sh &lt;sid&gt;` - find all citations for the faculty
+  * `./bin/wos-close.py &lt;sid&gt;` - be polite; terminate the Web of Science connection
+  * `./bin/doi2db.sh` - fill the database with the cited identifiers (DOI's)
 
 ### Third movement - "Resolutions"
-  * ./bin/resolve.sh - acquire bibliographic data assoicated with each DOI
-  * ./bin/bibliographics2db.sh - update the database accordingly
+  * `./bin/resolve.sh` - acquire bibliographic data assoicated with each DOI
+  * `./bin/bibliographics2db.sh` - update the database accordingly
   
 ### Fourth movement - "Summarization"
-  * cat ./etc/reports.sql | sqlite3 ./etc/library.db - generate a set of reports against the database, and a sample report is located at [etc/report.txt](./etc/report.txt)
+  * `cat ./etc/reports.sql | sqlite3 ./etc/library.db` - generate a set of reports against the database, and a sample report is located at [etc/report.txt](./etc/report.txt)
  
  ## To do
  There are a number of things to do, listed in no priority order:
