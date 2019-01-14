@@ -6,21 +6,25 @@ As of right now, there are only four "movements" in the suite. The first one rea
 
 ## Performance
 
-To "play" the suite, the following commands are recommended, but as of right now, your milage may vary:
+To "play" the suite, the following "score" is provided, but your milage will probably vary.
 
+### First movemenet - "Initialization"
   * ./bin/clean.sh
   * ./bin/db-create.sh
   * ./bin/db-initialize.sh
   * ./bin/faculty2db.sh
+ 
+### Second movement - "The Search"
   * ./bin/wos-open.py &lt;password&gt;
   * ./bin/wos-search.sh &lt;sid&gt;
   * ./bin/wos-close.py &lt;sid&gt;
   * ./bin/doi2db.sh
+
+### Third movement - "Resolutions"
   * echo "select netid, doi from bibliographics where doi>'';" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
   * ./bin/bibliographics2db.sh
   
-Once you get this far, you ought to be run some simple reports against the resulting database:
-
+### Fourth movement - "Summarization"
   * cat ./etc/reports.sql | sqlite3 ./etc/library.db | less
   
 ---
