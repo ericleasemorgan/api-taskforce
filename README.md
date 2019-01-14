@@ -31,7 +31,13 @@ To "play" the suite, the following "score" is provided, but your milage will pro
  There are a number of things to do, listed in no priority order:
  
    * create a more accurate &amp; comprehensive list of faculty
-   * 
+   * index the database's content with Solr
+   * create a terminal-based Solr interface
+   * create a Web-based Solr interface
+   * learn how to limit citation (author) searches to Notre Dame only
+   * do author disambiguation
+   * save more-comprehensive bibliographic data
+   * other duties as assigned
   
 ---
 Eric Lease Morgan &lt;emorgan@nd.edu&gt;  
