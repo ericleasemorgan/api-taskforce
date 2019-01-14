@@ -8,23 +8,23 @@ As of right now, there are only four "movements" in the suite. The first one rea
 
 To "play" the suite, the following "score" is provided, but your milage will probably vary.
 
-### First movement - "Prelude"
+### First Movement - "Prelude"
   * `./bin/clean.sh` - erase any work done previously
   * `./bin/db-create.sh` - generate an empty database
   * `./bin/db-initialize.sh` - fill the database with NetId's
   * `./bin/faculty2db.sh` - update the database with names, departments, colleges, etc.
  
-### Second movement - "The Search"
+### Second Movement - "The Search"
   * `./bin/wos-open.py <password>` - initialize a connection to Web of Science
   * `./bin/wos-search.sh <sid>` - find all citations for the faculty
   * `./bin/wos-close.py <sid>` - be polite; terminate the Web of Science connection
   * `./bin/doi2db.sh` - fill the database with the cited identifiers (DOI's)
 
-### Third movement - "Resolutions"
+### Third Movement - "Resolutions"
   * `./bin/resolve.sh` - acquire bibliographic data assoicated with each DOI
   * `./bin/bibliographics2db.sh` - update the database accordingly
   
-### Fourth movement - "Finale"
+### Fourth Movement - "Finale"
   * `cat ./etc/reports.sql | sqlite3 ./etc/library.db` - generate a set of reports against the database, and a sample report is located at [etc/report.txt](./etc/report.txt)
  
  ## To do
