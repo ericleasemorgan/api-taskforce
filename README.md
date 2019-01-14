@@ -10,7 +10,7 @@ This suite is written for a number of "instruments", including: Linux, Bash, Pyt
 
 ## Performance
 
-To "play" the suite, the following "score" is provided, but like any performance, playing the suite required practice.
+To "play" the suite, the following "score" is provided, but like any performance, playing the suite requires practice!
 
 ### First Movement - "Prelude"
   * `./bin/clean.sh` - erase any work done previously
