@@ -6,7 +6,7 @@ As of right now, there are only four "movements" in the suite. The first one rea
 
 ## Instrumentation
 
-This suite is written for a number of "instruments", including: Linux, Bash, Python, Perl, SQL, and bits of XPath.
+This suite is written for a number of "instruments", including: Linux, Bash, Python, Perl, the SQLite dialect of SQL, and bits of XPath. It also requires a password to the Web of Science backend.
 
 ## Performance
 
