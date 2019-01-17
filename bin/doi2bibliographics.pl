@@ -45,5 +45,7 @@ if ( $response->is_success ) {
 	
 }
 
+else { warn $response->content }
+
 # done
 exit;

@@ -14,5 +14,5 @@ DB='./etc/library.db'
 DOI2BIBLIOGRAPHICS='./bin/doi2bibliographics.sh'
 
 # do the work and done
-cat $SQL | sqlite3 $DB | parallel $DOI2BIBLIOGRAPHICS {}
+echo $SQL | sqlite3 $DB | parallel $DOI2BIBLIOGRAPHICS {}
 exit

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # doi2bibliographics.sh - a front-end to doi2bibliographics.pl
-# usage: echo "select netid, doi from dois;" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
+# usage: echo "select netid, doi from bibliographics;" | sqlite3 ./etc/library.db | parallel ./bin/doi2bibliographics.sh {}
 
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
