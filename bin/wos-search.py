@@ -5,12 +5,14 @@
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
-# January 11, 2019 - based on good work by Lisa Stienbarger and Mark Dehmlow
+# January  11, 2019 - based on good work by Lisa Stienbarger and Mark Dehmlow
+# February 20, 2019 - added limitation by zip code
 
 
 # configure
 NAMESPACES = { 'ns2': 'http://woksearchlite.v3.wokmws.thomsonreuters.com', 'soap': 'http://schemas.xmlsoap.org/soap/envelope/' }
 SEARCH     = 'http://search.webofknowledge.com/esti/wokmws/ws/WokSearchLite'
+ZIPCODE    = '46556'
 
 # require
 from lxml import etree
@@ -35,7 +37,7 @@ author = " ".join( author )
 header = { 'Cookie': sid }
 
 # search
-query    = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:woksearchlite="http://woksearchlite.v3.wokmws.thomsonreuters.com"><soapenv:Header/><soapenv:Body><woksearchlite:search><queryParameters><databaseId>WOS</databaseId><userQuery>AU=(' + author + ')</userQuery><editions><collection>WOS</collection><edition>SCI</edition></editions><queryLanguage>en</queryLanguage></queryParameters><retrieveParameters><firstRecord>1</firstRecord><count>0</count></retrieveParameters></woksearchlite:search></soapenv:Body></soapenv:Envelope>'
+query    = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:woksearchlite="http://woksearchlite.v3.wokmws.thomsonreuters.com"><soapenv:Header/><soapenv:Body><woksearchlite:search><queryParameters><databaseId>WOS</databaseId><userQuery>AU=(' + author + ') AND ZP="' + ZIPCODE + '"</userQuery><editions><collection>WOS</collection><edition>SCI</edition></editions><queryLanguage>en</queryLanguage></queryParameters><retrieveParameters><firstRecord>1</firstRecord><count>0</count></retrieveParameters></woksearchlite:search></soapenv:Body></soapenv:Envelope>'
 response = ua.post( SEARCH, headers=header, data=query )
 
 results = response.text
