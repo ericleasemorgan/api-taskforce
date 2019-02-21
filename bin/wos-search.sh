@@ -10,7 +10,7 @@
 
 # configure
 DB='./etc/library.db'
-SQL="SELECT netid, firstname, lastname FROM faculty;"
+SQL="SELECT netid, firstname, lastname FROM faculty ORDER BY netid;"
 IFS='|'
 WOSSEARCH='./bin/wos-search.py'
 WOSRESULTS='./caches/results'

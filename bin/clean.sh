@@ -9,8 +9,10 @@
 
 
 # do the work
-rm -rf ./caches/bibliographics/*.tsv
-rm -rf ./caches/results/*.tsv
+rm -rf ./caches/bibliographics
+rm -rf ./caches/results
+mkdir  ./caches/bibliographics
+mkdir  ./caches/results
 rm -rf ./etc/library.db
 rm -rf ./logs/*.log
 rm -rf ./sql/*.sql

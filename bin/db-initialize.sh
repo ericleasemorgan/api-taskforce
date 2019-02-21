@@ -10,8 +10,9 @@
 
 # configure
 DB='./etc/library.db'
-TSV='./etc/faculty.tsv'
+TSV='./etc/patron_data.psv'
 TRANSACTIONS='./sql/initialize-faculty.sql'
+IFS='|'
 
 # initialize
 echo "BEGIN TRANSACTION;" > $TRANSACTIONS
@@ -21,7 +22,7 @@ while read RECORD; do
 
 	# parse
 	FIELDS=($RECORD)
-	NETID="${FIELDS[0]}"
+	NETID="${FIELDS[8]}"
 		
 	# re-initialize, debug, and update
 	SQL="INSERT INTO faculty ( 'netid' ) VALUES ( '$NETID' );"

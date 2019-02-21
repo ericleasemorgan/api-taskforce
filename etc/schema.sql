@@ -13,12 +13,8 @@ create table faculty (
     netid       TEXT,
     firstname   TEXT,
     lastname    TEXT,
-    title       TEXT,
-    type        TEXT,
-    college     TEXT,
     department  TEXT,
-    center      TEXT,
-    status      TEXT
+    type        TEXT
 );
 
 -- bibliographics

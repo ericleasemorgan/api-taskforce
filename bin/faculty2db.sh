@@ -11,9 +11,9 @@
 
 # configure
 DB='./etc/library.db'
-IFS=$'\t'
+IFS=$'|'
 TRANSACTIONS='./sql/update-faculty.sql'
-TSV='./etc/faculty.tsv'
+TSV='./etc/patron_data.psv'
 
 # initialize
 echo "BEGIN TRANSACTION;" > $TRANSACTIONS
@@ -23,20 +23,25 @@ while read RECORD; do
   
 	# parse
 	FIELDS=($RECORD)
-	NETID="${FIELDS[0]}"
-	FIRSTNAME="${FIELDS[3]}"
-	LASTNAME="${FIELDS[4]}"
-	DEPARTMENT="${FIELDS[5]}"
-	COLLEGE="${FIELDS[6]}"
+	NDID="${FIELDS[0]}"
+	TYPE="${FIELDS[1]}"
+	NAME_PREFIX="${FIELDS[2]}"
+	FIRST_NAME="${FIELDS[3]}"
+	MIDDLE_NAME="${FIELDS[4]}"
+	LAST_NAME="${FIELDS[5]}"
+	NAME_SUFFIX="${FIELDS[6]}"
+	DEPARTMENT="${FIELDS[7]}"
+	NETID="${FIELDS[8]}"
+	EMAIL="${FIELDS[9]}"
 	
 	# escape
-	COLLEGE=$( echo $COLLEGE | sed "s/'/''/g" )
 	DEPARTMENT=$( echo $DEPARTMENT | sed "s/'/''/g" )
-	FIRSTNAME=$( echo $FIRSTNAME | sed "s/'/''/g" )
-	LASTNAME=$( echo $LASTNAME | sed "s/'/''/g" )
+	FIRST_NAME=$( echo $FIRST_NAME | sed "s/'/''/g" )
+	LAST_NAME=$( echo $LAST_NAME | sed "s/'/''/g" )
+	TYPE=$( echo $TYPE | sed "s/'/''/g" )
 	
 	# re-initialize, debug, and update
-	SQL="UPDATE faculty SET firstname='$FIRSTNAME', lastname='$LASTNAME', college='$COLLEGE', department='$DEPARTMENT' WHERE netid='$NETID';"
+	SQL="UPDATE faculty SET firstname='$FIRST_NAME', lastname='$LAST_NAME', department='$DEPARTMENT', type='$TYPE' WHERE netid='$NETID';"
 	echo $SQL >&2
 	echo $SQL >> $TRANSACTIONS
 	
