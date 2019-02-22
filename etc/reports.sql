@@ -18,76 +18,56 @@ SELECT '';
 
 
 -- get the number of people in the database
-SELECT "Number of faculty";
-SELECT "-----------------";
-SELECT COUNT( netid ) FROM faculty;
+SELECT "Number of records in the database";
+SELECT "----------------------------------";
+SELECT COUNT( * ) FROM faculty;
+SELECT '';
+SELECT '';
+
+-- count & tabulate the different types of people
+SELECT "Count & tabulate different types of people";
+SELECT "-----------------------------------";
+SELECT COUNT( type ) AS c, type FROM faculty GROUP BY type ORDER BY c DESC;
 SELECT '';
 SELECT '';
 
 
--- list all netid's
-SELECT "All netids";
-SELECT "----------";
-SELECT netid FROM faculty ORDER BY netid ASC;
+-- create a random list of faculty; a simple directory
+SELECT "A random list of faculty";
+SELECT "------------------------";
+SELECT lastname || ', ' || firstname || ' (' || netid || ')' FROM faculty WHERE type IS 'Faculty' AND netid > '' ORDER BY RANDOM(), lastname LIMIT 25;
 SELECT '';
 SELECT '';
-
-
--- create a list of faculty; a simple directory
-SELECT "All faculty";
-SELECT "-----------";
-SELECT lastname || ', ' || firstname || ' (' || netid || ')' FROM faculty ORDER BY lastname;
-SELECT '';
-SELECT '';
-
-
--- count & tabulate the number of faculty in each college
-SELECT "Number of faculty in each college";
-SELECT "---------------------------------";
-SELECT COUNT( college ) AS c, college FROM faculty GROUP BY college ORDER BY c DESC;
-SELECT '';
-SELECT '';
-
 
 -- count & tabulate the number of faculty in each department
 SELECT "Number of faculty in each department";
 SELECT "------------------------------------";
-SELECT COUNT( department ) AS c, department FROM faculty GROUP BY department ORDER BY c DESC;
-SELECT '';
-SELECT '';
-
-
--- all faculty from a given college (College of Science); another directory
-SELECT "All faculty in a given college (College of Science)";
-SELECT "---------------------------------------------------";
-SELECT lastname || ', ' || firstname || ' (' || netid || ')' FROM faculty WHERE college='College of Science' ORDER BY lastname;
+SELECT COUNT( department ) AS c, department FROM faculty WHERE type IS 'Faculty' GROUP BY department ORDER BY c DESC;
 SELECT '';
 SELECT '';
 
 
 -- all faculty from a given department (Electrical Engineering); yet another directory
-SELECT "All faculty in a given department (Electrical Engineering)";
-SELECT "----------------------------------------------------------";
-SELECT lastname || ', ' || firstname || ' (' || netid || ')' FROM faculty WHERE department='Electrical Engineering' ORDER BY lastname;
+SELECT "Random list of faculty in a given department (Biological Sciences)";
+SELECT "------------------------------------------------------------------";
+SELECT lastname || ', ' || firstname || ' (' || netid || ')' FROM faculty WHERE department='Biological Sciences' ORDER BY RANDOM(), lastname LIMIT 25;
 SELECT '';
 SELECT '';
-
 
 -- number of citations
-SELECT "Number of citations in the database";
-SELECT "-----------------------------------";
+SELECT "Number of (faculty) citations in the database";
+SELECT "----------------------------------------------";
 SELECT COUNT( doi ) FROM bibliographics;
 SELECT '';
 SELECT '';
 
 
 -- count & tabulate the number of citations for each netid
-SELECT "Number of citations for each netid";
-SELECT "----------------------------------";
-SELECT COUNT( netid ) AS c, netid FROM bibliographics GROUP BY netid ORDER BY c DESC;
+SELECT "Most frequently authored netids";
+SELECT "--------------------------------";
+SELECT COUNT( netid ) AS c, netid FROM bibliographics GROUP BY netid ORDER BY c DESC LIMIT 50;
 SELECT '';
 SELECT '';
-
 
 -- count & tabulate the number of citations for each faculty member
 SELECT "Number of citations for each faculty member";
@@ -96,34 +76,21 @@ SELECT COUNT( b.netid ) AS c, f.lastname || ', ' || f.firstname
 FROM bibliographics AS b, faculty AS f
 WHERE f.netid = b.netid
 GROUP BY f.lastname, f.firstname
-ORDER BY c desc, f.lastname ASC;
+ORDER BY c desc, f.lastname ASC
+LIMIT 50;
 SELECT '';
 SELECT '';
-
-
--- count & tabulate the number of citations for faculty member in a given college (College of Science)
-SELECT "Number of citations for each faculty member in a given college (College of Science)";
-SELECT "-----------------------------------------------------------------------------------";
-SELECT COUNT( b.netid ) AS c, f.lastname || ', ' || f.firstname
-FROM bibliographics AS b, faculty AS f
-WHERE f.netid = b.netid AND f.college='College of Science'
-GROUP BY f.lastname, f.firstname
-ORDER BY c desc, f.lastname ASC;
-SELECT '';
-SELECT '';
-
 
 -- count & tabulate the number of citations for faculty member in a given department (Electrical Engineering)
-SELECT "Number of citations for each faculty member in a given department (Electrical Engineering)";
+SELECT "Number of citations for each faculty member in a given department (Biological Sciences)";
 SELECT "------------------------------------------------------------------------------------------";
 SELECT COUNT( b.netid ) AS c, f.lastname || ', ' || f.firstname
 FROM bibliographics AS b, faculty AS f
-WHERE f.netid = b.netid AND f.department='Electrical Engineering'
+WHERE f.netid = b.netid AND f.department='Biological Sciences'
 GROUP BY f.lastname, f.firstname
 ORDER BY c desc, f.lastname ASC;
 SELECT '';
 SELECT '';
-
 
 -- count & tabulate the top 10 journal titles
 SELECT "Top 10 journal titles";
@@ -132,49 +99,52 @@ SELECT COUNT( title_journal ) AS c, title_journal FROM bibliographics GROUP BY t
 SELECT '';
 SELECT '';
 
-
 -- count & tabulate the number of journal titles in a given college (College of Science)
-SELECT "Top 10 journal titles written by faculty in a given college (College of Science)";
+SELECT "Top 25 journal titles written by faculty in a given department (Biological Sciences)";
 SELECT "--------------------------------------------------------------------------------";
 SELECT COUNT( b.title_journal ) AS c, b.title_journal
 FROM bibliographics AS b, faculty AS f
-WHERE f.netid = b.netid AND f.college='College of Science'
+WHERE f.netid = b.netid AND f.department='Biological Sciences'
 GROUP BY b.title_journal
 ORDER BY c desc
-LIMIT 10;
+LIMIT 25;
 SELECT '';
 SELECT '';
 
+SELECT "All faculty who have published in Science or Nature";
+SELECT "---------------------------------------------------";
+SELECT count( f.netid ) as c, lastname || ', ' || firstname || ' (' || f.department || ')'
+FROM bibliographics AS b, faculty AS f
+WHERE f.netid = b.netid AND ( b.title_journal='Science' OR b.title_journal='Nature' )
+GROUP BY f.netid order by c desc;
+SELECT '';
+SELECT '';
 
 -- all about a specific netid
-SELECT "All about a given NetId (tfuja)";
+SELECT "All about a given NetId (GBELOVSK)";
 SELECT "-------------------------------";
 SELECT '';
 SELECT "                 Name: " || firstname || ' ' || lastname || ' <' || netid || '@nd.edu>'
 FROM faculty
-WHERE netid = 'tfuja';
+WHERE netid = 'GBELOVSK';
 SELECT "           Department: " || department
 FROM faculty
-WHERE netid = 'tfuja';
-SELECT "              College: " || college
-FROM faculty
-WHERE netid = 'tfuja';
-SELECT "  Number of citations: " || COUNT( doi ) FROM bibliographics WHERE netid = 'tfuja';
+WHERE netid = 'GBELOVSK';
+SELECT "  Number of citations: " || COUNT( doi ) FROM bibliographics WHERE netid = 'GBELOVSK';
 SELECT '';
 SELECT "  Bibliography";
-SELECT '';
 SELECT '  * ' || b.title_article || ' by ' || f.firstname || ' ' || f.lastname || ' in ' || b.title_journal || ' (' || b.url || ')' || char(10)
 FROM bibliographics AS b, faculty AS f
-WHERE f.netid = b.netid AND f.netid = 'tfuja'
+WHERE f.netid = b.netid AND f.netid = 'GBELOVSK'
 ORDER BY b.title_journal, b.title_article;
 SELECT '';
-
 
 -- signature
 SELECT "--";
 SELECT "Eric Lease Morgan <emorgan@nd.edu>";
-SELECT "January 13, 2019";
+SELECT "February 5, 2019";
 SELECT '';
 SELECT '';
+
 
 

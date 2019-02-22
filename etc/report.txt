@@ -5,1174 +5,528 @@ Reports
 This is a set of simple & example reports that have be applied to the API Taskforce database.
 
 
-Number of faculty
------------------
-261
+Number of records in the database
+----------------------------------
+21681
 
 
-All netids
-----------
-aapraham
-acavalie
-aconrado
-adowling
-adutt
-afuentes
-agarci21
-ahoffma8
-ajemcov
-ajuan
-alangenk
-amintair
-amoukasi
-aorlov
-apanopou
-apillay
-aseabaug
-atassi
-atsui
-b1hu
-bashfeld
-bbaker2
-bblagg
-bhochwal
-bjanko
-blee
-bmalkovs
-bsmith3
-bunker
-cball2
-ccervena
-cdsouzas
-chicago
-cjauregu
-cma3
-cobrie23
-ctanner
-ctessier
-cyin
-dchen
-dchiang
-dcortez
-dcostel1
-ddoordan
-dgo
-dgroody
-dhall
-dlantigu
-dnarvaez
-dputra1
-dshephe1
-dvural
-ehaansta
-ejumper
-ekoll
-ematlis
-emichael
-emoosa1
-etuleja
-faragon
-fcastell
-fein
-ffeng
-fliu2
-flynn
-frobles1
-fthomas
-furdyna
-garg
-gbernste
-gcardena
-gcsaba
-genderle
-ggutierr
-ghartlan
-gniebur
-gsnider
-gtimp
-gtryggva
-hchang
-hfernand
-hgao
-hgoodson
-hjuhn
-hkang2
-hlin1
-hsakaue
-huang
-hxing
-jbrown33
-jbustama
-jchisum
-jhicks3
-jhuynh1
-jjones23
-jlederac
-jlee71
-jli9
-jmcmanus
-jmerz
-jnagle1
-jnahas
-jnl
-jnoble
-jpensado
-jprosper
-jruiz3
-jschaef6
-jshrout
-jthomas2
-jwhitme1
-jzartman
-kareem
-kbeyerl1
-kchrist7
-kcowdend
-kdoudric
-keating
-khuynh
-kkim
-kkoesel1
-kmatous
-kogge
-kosel
-krichman
-kuplekar
-kvaughan
-kyang1
-lcai
-lent
-lfraga
-lge
-liyer
-ljensen
-llittlep
-lliu3
-lsteil1
-mamezcua
-mbrownst
-mbruenin
-mchang
-mdobrowo
-meichi
-meskilds
-mfox4
-mgalvin2
-mhaenggi
-mhockx
-mjiang2
-mjoshi2
-mkuno
-mlieberm
-mlykoudi
-mmorenoa
-mniemier
-mravosa
-mroger10
-mschwarz
-msen
-msirry
-mtomasul
-mtriyana
-mwang2
-mwebber
-mwebber
-mwistey
-nchawla
-ndovichi
-nhanabus
-nmark
-nporter2
-nverma
-nzhang
-omenes
-owiest
-owilliam
-paolucci
-pbellia
-pbohn
-pcarozza
-pcasarel
-pfay
-phelquis
-phuber
-pkamat
-pmcginn
-pmoody
-pnallath
-porod
-powers
-pzorlutu
-rbillo
-rdahl1
-rdunn
-rgimello
-rguo
-rhill3
-rhuang
-rhughes6
-rmcclai1
-rmckenn3
-rnelson
-roka
-rramire5
-rrennie
-rroeder
-rschulz
-rtaylor
-sauer
-sblum
-sbulloc1
-sdatta
-sgordeye
-showard
-shu
-sleonov
-snereti1
-sosterma
-sptasins
-squesada
-sreifenb
-srosato
-srouvimo
-sruggier
-sschierl
-sschmid
-sstack
-steve
-striegel
-syounes
-szhang8
-tanders6
-tchun
-tcorke
-tfuja
-thui
-tjuliano
-tkizilte
-tluo
-tmatovin
-tmerluzz
-tmilenko
-tosulli2
-tpratt
-ttweed
-tvargogo
-vploplis
-wleevy
-wphillip
-wwang7
-wye
-xlu
-xyang
-ywu11
-yyoon3
-yzhang45
-yzhu8
-zbilgice
-zda
-zschafe1
-zshi2
+Count & tabulate different types of people
+-----------------------------------
+8797|Undergrad Student
+4738|Staff
+4083|Grad Student
+3059|Faculty
+647|Retired Staff
+357|Retired Faculty
 
 
-All faculty
------------
-
-Amezcua, Mike (mamezcua)
-Anderson, Thomas (tanders6)
-Aprahamian, Ani (aapraham)
-Aragon, Francisco (faragon)
-Ashfeld, Brandon (bashfeld)
-Atassi, Hafiz (atassi)
-Baker, Brian (bbaker2)
-Ball, Christopher (cball2)
-Bellia, Patricia (pbellia)
-Bernstein, Gary (gbernste)
-Beyerlein, Kraig (kbeyerl1)
-Bilgicer, Zihni (zbilgice)
-Billo, Richard (rbillo)
-Blagg, Brian (bblagg)
-Blum, Susan (sblum)
-Bohn, Paul (pbohn)
-Brown, Jessica (jbrown33)
-Brownstein, Michael (mbrownst)
-Bruening, Merlin (mbruenin)
-Buechler, Steven (steve)
-Bullock, Stewart (sbulloc1)
-Bunker, Bruce (bunker)
-Bustamante, Jorge (jbustama)
-Cai, Liang (lcai)
-Cardenas, Gilberto (gcardena)
-Carozza, Paolo (pcarozza)
-Casarella, Peter (pcasarel)
-Castellino, Francis (fcastell)
-Cavalieri, Angela (acavalie)
-Cervenak, Christine (ccervena)
-Chang, Hsueh-Chia (hchang)
-Chang, Mayland (mchang)
-Chawla, Nitesh (nchawla)
-Chen, Danny (dchen)
-Chiang, David (dchiang)
-Chisum, Jonathan (jchisum)
-Christensen, Kenneth (kchrist7)
-Chun, Tarryn (tchun)
-Conrado, Ann-Marie (aconrado)
-Corke, Thomas (tcorke)
-Cortez, David (dcortez)
-Costello, Daniel (dcostel1)
-CowdenDahl, Karen (kcowdend)
-Csaba, Gyorgy (gcsaba)
-D'Souza-Schorey, Crislyn (cdsouzas)
-Da, Nan (nzhang)
-Da, Zhi (zda)
-Dahl, Richard (rdahl1)
-Datta, Suman (sdatta)
-Dobrowolska-Furdyna, Malgorzata (mdobrowo)
-Doordan, Dennis (ddoordan)
-Doudrick, Kyle (kdoudric)
-Dovichi, Norman (ndovichi)
-Dowling, Alexander (adowling)
-Dunn, Robert (rdunn)
-Dutt, Amitava (adutt)
-Enderle, Georges (genderle)
-Eskildsen, Morten (meskilds)
-Fay, Patrick (pfay)
-Fein, Jeremy (fein)
-Feng, Felix (ffeng)
-Fernando, Harindra (hfernand)
-Flynn, Patrick (flynn)
-Fox, Mark (mfox4)
-Fraga, Luis (lfraga)
-Fuentes, Agustin (afuentes)
-Fuja, Thomas (tfuja)
-Furdyna, Jacek (furdyna)
-Galvin, Mary (mgalvin2)
-Gao, Haifeng (hgao)
-Garcia-Romero, Anne (agarci21)
-Garg, Umesh (garg)
-Ge, Liangyan (lge)
-Gimello, Robert (rgimello)
-Go, David (dgo)
-Goodson, Holly (hgoodson)
-Gordeyev, Stanislav (sgordeye)
-Groody, Daniel (dgroody)
-Guo, Ruilan (rguo)
-Gutierrez, Gustavo (ggutierr)
-Haanstad, Eric (ehaansta)
-Haenggi, Martin (mhaenggi)
-Hall, Douglas (dhall)
-Hanabusa, Noriko (nhanabus)
-HanjayaPutra, Donny (dputra1)
-Hartland, Gregory (ghartlan)
-Helquist, Paul (phelquis)
-Hicks, Jason (jhicks3)
-Hill, Reginald (rhill3)
-Hochwald, Bertrand (bhochwal)
-Hockx, Michael (mhockx)
-Hoffman, Anthony (ahoffma8)
-Howard, Scott (showard)
-Hu, Bei (b1hu)
-Hu, Xiaobo (shu)
-Huang, Yih-Fang (huang)
-Huang, Roger (rhuang)
-Huber, Paul (phuber)
-Hughes, Robert (rhughes6)
-Hui, Victoria (thui)
-Huynh, Jennifer (jhuynh1)
-Huynh, Khoa (khuynh)
-Iyer, Lakshmi (liyer)
-Janko, Boldizsar (bjanko)
-Jauregui, Carlos (cjauregu)
-Jemcov, Aleksandar (ajemcov)
-Jensen, Lionel (ljensen)
-Jiang, Meng (mjiang2)
-Jones, Jennifer (jjones23)
-Joshi, Madhav (mjoshi2)
-Juan, Anthony (ajuan)
-Juhn, Hye-jin (hjuhn)
-Juliano, Thomas (tjuliano)
-Jumper, Eric (ejumper)
-Kamat, Prashant (pkamat)
-Kang, Hana (hkang2)
-Kareem, Ahsan (kareem)
-Keating, Barry (keating)
-Kim, Kwan (kkim)
-KiziltepeBilgicer, Tanyel (tkizilte)
-Koesel, Karrie (kkoesel1)
-Kogge, Peter (kogge)
-Koll, Elisabeth (ekoll)
-Kosel, Thomas (kosel)
-Kuno, Masaru (mkuno)
-Laneman, J Nicholas (jnl)
-Langenkamp, Amy (alangenk)
-Lantigua, David (dlantigu)
-Lederach, John (jlederac)
-Lee, Byung-Joo (blee)
-Lee, Jaewoong (jlee71)
-Leevy, W Matthew (wleevy)
-Lent, Craig (lent)
-Leonov, Sergey (sleonov)
-Li, Jun (jli9)
-Lieberman, Marya (mlieberm)
-Lin, Hai (hlin1)
-Littlepage, Laurie (llittlep)
-Liu, Fang (fliu2)
-Liu, Lei (lliu3)
-Lu, Xin (xlu)
-Luo, Tengfei (tluo)
-Lykoudis, Michael (mlykoudi)
-Ma, Congcong (cma3)
-Malkovsky, Bradley (bmalkovs)
-Mark, Nelson (nmark)
-Matlis, Eric (ematlis)
-Matous, Karel (kmatous)
-Matovina, Timothy (tmatovin)
-McClain, Rodney (rmcclai1)
-McGinn, Paul (pmcginn)
-McKenna, Rebecca (rmckenn3)
-McManusWarnell, Jessica (jmcmanus)
-Menes, Orlando (omenes)
-Merluzzi, Thomas (tmerluzz)
-Merz, James (jmerz)
-Michael, Edwin (emichael)
-Milenkovic, Tijana (tmilenko)
-Mintairov, Alexander (amintair)
-Moody, Peter (pmoody)
-Moosa, Ebrahim (emoosa1)
-Moreno-Anderson, Marisel (mmorenoa)
-Mukasyan, Alexander (amoukasi)
-Nagle, John (jnagle1)
-Nahas, Joseph (jnahas)
-Nallathamby, Prakash (pnallath)
-Narvaez, Darcia (dnarvaez)
-Nelson, Robert (rnelson)
-Neretina, Svetlana (snereti1)
-Niebur, Glen (gniebur)
-Niemier, Michael (mniemier)
-Noble, Jonathan (jnoble)
-O'Brien, Casey (cobrie23)
-O'Sullivan, Thomas (tosulli2)
-Oka, Rahul (roka)
-Orlov, Alexei (aorlov)
-Ostermann, Susan (sosterma)
-Panopoulos, Athanasia (apanopou)
-Paolucci, Samuel (paolucci)
-Pensado, Jaime (jpensado)
-Phillip, William (wphillip)
-Pillay, Anand (apillay)
-Ploplis, Victoria (vploplis)
-Porod, Wolfgang (porod)
-Porter, Natalie (nporter2)
-Powers, Joseph (powers)
-Pratt, Thomas (tpratt)
-Prosperi, Jenifer (jprosper)
-Ptasinska, Sylwia (sptasins)
-Quesada, Sarah (squesada)
-Ramirez, Ricardo (rramire5)
-Ravosa, Matthew (mravosa)
-Reifenberg, Stephen (sreifenb)
-Rennie, Robert (rrennie)
-Richman, Karen (krichman)
-Robles, Francisco (frobles1)
-Roeder, Ryan (rroeder)
-Rogers, Megan (mroger10)
-Rosato, Sebastian (srosato)
-Rouvimov, Sergei (srouvimo)
-Ruggiero, Steven (sruggier)
-Ruiz, Jason (jruiz3)
-Sakaue, Hirotaka (hsakaue)
-Sauer, Ken (sauer)
-Schaefer, Jennifer (jschaef6)
-Schafer, Zachary (zschafe1)
-Schierling, Sharon (sschierl)
-Schmid, Steven (sschmid)
-Schulz, Robert (rschulz)
-Schwarz, Margaret (mschwarz)
-Seabaugh, Alan (aseabaug)
-Sen, Mihir (msen)
-Shaw, Mei-Chi (meichi)
-Shepherd, Dean (dshephe1)
-Shi, Zonggao (zshi2)
-Shrout, Joshua (jshrout)
-Sirry, Mun'im (msirry)
-Smith, Bradley (bsmith3)
-Snider, Gregory (gsnider)
-Stack, Mary (sstack)
-Steil, Lucien (lsteil1)
-Striegel, Aaron (striegel)
-Tanner, Carol (ctanner)
-Taylor, Richard (rtaylor)
-Tessier, Charles (ctessier)
-Thomas, Flint (fthomas)
-Thomas, Julia (jthomas2)
-Timp, Gregory (gtimp)
-Tomasula, Maria (mtomasul)
-Triyana, Margaret (mtriyana)
-Tryggvason, Gretar (gtryggva)
-Tsui, Anne (atsui)
-Tuleja, Elizabeth (etuleja)
-Tweed, Thomas (ttweed)
-Uplekar, Krupali (kuplekar)
-Vargo-Gogola, Tracy (tvargogo)
-Vaughan, Kevin (kvaughan)
-Verma, Neeta (nverma)
-Vural, Dervis (dvural)
-Wang, Meng (mwang2)
-Wang, Wei (wwang7)
-Webber, Matthew (mwebber)
-Webber, Matthew (mwebber)
-Whitmer, Jonathan (jwhitme1)
-Wiest, Olaf (owiest)
-Williams, Oliver (owilliam)
-Wistey, Mark (mwistey)
-Wu, Yang (ywu11)
-Xing, Huili (hxing)
-Yang, Ki Woong (kyang1)
-Yang, Xiaoshan (xyang)
-Ye, Weibing (wye)
-Yin, Chengxu (cyin)
-Yoon, Yeonhee (yyoon3)
-Younes, Samir (syounes)
-Zartman, Jeremiah (jzartman)
-Zhang, Siyuan (szhang8)
-Zhang, Yanliang (yzhang45)
-Zhu, Yongping (yzhu8)
-Zorlutuna, Pinar (pzorlutu)
-
-
-Number of faculty in each college
----------------------------------
-93|Undefined
-49|College of Science
-47|College of Arts & Letters
-42|College of Engineering
-8|Mendoza College of Business
-5|Architecture
-5|Law School
-4|Provost Office
-3|Affiliates
-3|active
-1|First Year of Studies
-0|
+A random list of faculty
+------------------------
+McAward, Jennifer (JMASON3)
+Foster, James (JFOSTER4)
+Jin, Renxi (RJIN)
+Selking, Amber (ALATTNER)
+Lieberman, Marya (MLIEBERM)
+Gabriel, Charles (CGABRIE4)
+Bodnaruk, Andriy (ABODNARU)
+Roeder, Ryan (RROEDER)
+Clements, Walter (WCLEMENT)
+Branco, Rachel (RBRANCO)
+Muller-Itten, Michele (MMULLERI)
+Martinkus, Caitlin (CMARTINK)
+Fernandez-Armesto, Felipe (FFERNAN2)
+Howk, Jay (JHOWK)
+Triyana, Margaret (MTRIYANA)
+Alexandrou, Nahid Erfan (NERFAN)
+Morris, Karen (KMORRIS)
+Milani, Kenneth (KMILANI)
+McDonnell, Erin (EMCDONN2)
+Garnavich, Peter (PGARNAVI)
+Vivirito, Patrick (PVIVIRIT)
+Blad, Alessia (ABLAD)
+Elmore, Maggie (MELMORE)
+Assaf, Badih (BASSAF)
+Ganesan, Shankar (SGANESAN)
 
 
 Number of faculty in each department
 ------------------------------------
-31|Aerospace and Mechanical Engineering
-31|Electrical Engineering
-22|Chemistry and Biochemistry
-16|Chemical and Biomolecular Engineering
-13|Biological Sciences
-13|East Asian Languages and Cultures
-11|Computer Science and Engineering
-10|Physics
-8|Theology
-7|Political Science
-6|Undefined
-5|Anthropology
-5|School of Architecture
-5|Sociology
-4|American Studies
-4|English
-4|Kellogg Institute for International Studies
-4|Law School
-3|Applied Computational Mathematics & Statistics
-3|Art, Art History, and Design
-3|Civil & Environmental Engineering & Earth Sciences
-3|Department of Economics
-3|Film, Television, and Theatre
-3|Finance
-3|Harper Cancer Research Institute
-3|History
-3|Institute for Latino Studies
-3|Keough School of Global Affairs
-3|Management & Organization
-2|Civil & Envr Engr & Earth Sciences
-2|Hesburgh Libraries
-2|Joan B. Kroc Institute for International Peace
-2|Mathematics
-2|Psychology
-2|Romance Languages and Literatures
-2|W.M. Keck Center for Transgene Research
-1|African and African American Studies
-1|Center for Civil and Human Rights
-1|College of Arts and Letters
-1|College of Science
-1|Ctr for Study of Religion & Society
-1|First Year of Studies
-1|Marketing
-1|Mendoza College of Business
+797|Electrical Engineering
+120|Biological Sciences
+119|Dean's Office-Law School
+118|Chemistry and Biochemistry
+86|Physics
+81|Civil & Envr Engr & Earth Sciences
+72|Theology
+69|Aerospace and Mechanical Engr
+67|Psychology
+62|Inst for Educational Initiatives
+61|Hesburgh Libraries
+61|Philosophy
+58|Political Science
+56|Computer Science and Engineering
+56|Management & Organization
+54|Mathematics
+53|Chemical and Biomolecular Engr
+51|Romance Languages and Literatures
+48|Finance
+47|English
+46|Department of Economics
+45|History
+39|Applied Computational Math & Stats
+38|Music
+38|Radiation Laboratory
+37|Accountancy
+33|IT, Analytics and Operations
+32|Dean's Offc-School of Architecture
+31|Art, Art History, and Design
+30|Dean's Office-First Year Of Studies
+29|Keough School of Global Affairs
+27|Film, Television, and Theatre
+27|Sociology
+26|Alliance for Catholic Education
+24|Marketing
+21|East Asian Languages and Cultures
+21|Joan B. Kroc Inst. for Int'l. Peace
+19|Anthropology
+19|Program of Liberal Studies
+18|Classics
+17|Kellogg Inst for Intrnl Studies
+16|American Studies
+16|German and Russian Langs and Lit
+14|ND Initiative for Global Developmt
+13|Univ Writing Program
+10|Center for Social Concerns
+9|Center for Research Computing
+9|Preprofessional Studies
+8|Dean's Office-Coll. of Engineering
+8|Dean's Office-College of Science
+8|Irish Language and Literature
+8|ND Institute for Advanced Study
+8|Naval Science
+7|ESTEEM Graduate Program
+7|Library Law
+7|ND Environmental Change Initiative
+6|Center for Philosophy of Religion
+6|Ctr for Study of Religion & Society
+6|McGrath Institute for Church Life
+5|Air Science
+5|CSLC-Ctr for Study of Lang. & Cult.
+5|Kaneb Ctr for Teaching and Learning
+5|Medieval Institute
+5|Office of A&L Undergrad Study
+5|WM Keck Ctr for Transgene Research
+4|Army Science
+4|Clinical Law Center
+4|Ctr for Theo, Sci & Human Flourishg
+4|Dean's Offc-Coll. of Arts & Letters
+4|Dean's Office - Graduate School
+4|Global Health Masters
+4|Institute for Asia & Asian Studies
+4|VP-Assoc Prov for Internationaliztn
+3|Center for Ethics and Culture
+3|Coll of Arts & Letters Fellowships
+3|Economics and Policy Studies
+3|Keough Inst. for Irish Studies
+3|London Law Program
+3|Provost Office
+3|Reilly Center - STV
+2|African and African Amer Studies
+2|Architecture-Rome
+2|Computer & Digital Tech. Program
+2|Creative Writing Program
+2|Cushwa Ct for Study American Cathol
+2|Dean's Office-Mendoza Coll. of Bus.
+2|Eck Institute for Global Health
+2|Harper Cancer Research Institute
+2|Institute for Latino Studies
+2|Nanovic Inst for European Studies
+2|Rome, Italy
+2|Sacred Music @ ND
+2|Science Computing
+2|Snite Museum
+2|UNDERC
+2|Washington, DC
+1|Center for Creative Computing
+1|Center for Low Energy Systems Tech
+1|Center for Materials Sci-Actinides
+1|College Seminar - A&L
+1|Constitutional Studies/Tocqueville
+1|Corby Hall
+1|Could not determine
+1|Ctr for Research Educational Opport
+1|Engineering International Programs
+1|Exec Ed Degree Programs
+1|Financial Aid
+1|Freimann Animal Care Facility
+1|Honors Program in Arts and Sciences
+1|Lab for Economic Opportunities
+1|London Undergraduate Program
+1|London-On Site
+1|ND Integrated Imaging Facility
+1|ND NANO
 1|Notre Dame Research
-1|Organization Department
-1|Preprofessional Studies
-1|Radiation Laboratory
-1|VP-Associate Provost for Internationaliztion
-1|amp
-0|
+1|Off-Campus Programs
+1|Office of President Emeritus II
+1|Patent Law Masters Program
+1|Research Cores
+1|Turbomachinery Facility
+1|Varsity Strength and Conditioning
 
 
-All faculty in a given college (College of Science)
----------------------------------------------------
-Aprahamian, Ani (aapraham)
-Ashfeld, Brandon (bashfeld)
-Baker, Brian (bbaker2)
-Bilgicer, Zihni (zbilgice)
-Blagg, Brian (bblagg)
-Brown, Jessica (jbrown33)
-Bunker, Bruce (bunker)
-Chang, Mayland (mchang)
-CowdenDahl, Karen (kcowdend)
-D'Souza-Schorey, Crislyn (cdsouzas)
-Dahl, Richard (rdahl1)
-Dobrowolska-Furdyna, Malgorzata (mdobrowo)
-Dovichi, Norman (ndovichi)
-Eskildsen, Morten (meskilds)
-Fox, Mark (mfox4)
-Furdyna, Jacek (furdyna)
-Galvin, Mary (mgalvin2)
-Gao, Haifeng (hgao)
-Garg, Umesh (garg)
-Goodson, Holly (hgoodson)
-Hartland, Gregory (ghartlan)
-Helquist, Paul (phelquis)
-Hill, Reginald (rhill3)
-Huber, Paul (phuber)
-Janko, Boldizsar (bjanko)
-Kuno, Masaru (mkuno)
-Leevy, W Matthew (wleevy)
-Lieberman, Marya (mlieberm)
-Littlepage, Laurie (llittlep)
-Lu, Xin (xlu)
-Michael, Edwin (emichael)
-Panopoulos, Athanasia (apanopou)
-Pillay, Anand (apillay)
-Prosperi, Jenifer (jprosper)
-Ravosa, Matthew (mravosa)
-Ruggiero, Steven (sruggier)
-Schafer, Zachary (zschafe1)
-Schulz, Robert (rschulz)
-Schwarz, Margaret (mschwarz)
-Shaw, Mei-Chi (meichi)
-Shi, Zonggao (zshi2)
-Smith, Bradley (bsmith3)
-Stack, Mary (sstack)
-Tanner, Carol (ctanner)
-Taylor, Richard (rtaylor)
-Vaughan, Kevin (kvaughan)
-Vural, Dervis (dvural)
-Wiest, Olaf (owiest)
-Zhang, Siyuan (szhang8)
+Random list of faculty in a given department (Biological Sciences)
+------------------------------------------------------------------
+Fraley, Gregg (GFRALEY)
+O'reilly, Katherine (KOREILL2)
+Egan, Bailee (BEGAN3)
+Kern, Marcia (MKERN)
+Archer, William (WARCHER)
+Levendusky, Jaclyn (JLEVENDU)
+Cronin, Rachel (RCRONIN1)
+LaBar, Madelyn (MLABAR)
+Grieco, John (JGRIECO)
+Oshiro, Hana (HOSHIRO)
+Nixon, Jordan (JNIXON)
+Anthuvan, Jacob (JANTHUVA)
+Lee, Davin (DLEE27)
+Cloghessy, Kaylee (KCLOGHES)
+Lee, Joseph (JLEE73)
+Conner, Henry (HCONNER)
+Licursi, Matthew (MLICURSI)
+Guinness, Andrew (AGUINNES)
+Tran, Quan (QTRAN4)
+Blakely, Bethany (BBLAKELY)
+Koepfli, Cristian (CKOEPFLI)
+Hollocher, Hope (HHOLLOCH)
+Osunnuga, Love (LOSUNNUG)
+Moon, Kyle (KMOON2)
+Knapik, Patricia (PKNAPIK)
 
 
-All faculty in a given department (Electrical Engineering)
-----------------------------------------------------------
-Bernstein, Gary (gbernste)
-Chisum, Jonathan (jchisum)
-Costello, Daniel (dcostel1)
-Datta, Suman (sdatta)
-Dunn, Robert (rdunn)
-Fay, Patrick (pfay)
-Fuja, Thomas (tfuja)
-Haenggi, Martin (mhaenggi)
-Hall, Douglas (dhall)
-Hochwald, Bertrand (bhochwal)
-Hoffman, Anthony (ahoffma8)
-Howard, Scott (showard)
-Huang, Yih-Fang (huang)
-Kosel, Thomas (kosel)
-Laneman, J Nicholas (jnl)
-Lent, Craig (lent)
-Lin, Hai (hlin1)
-Liu, Lei (lliu3)
-Merz, James (jmerz)
-Mintairov, Alexander (amintair)
-O'Sullivan, Thomas (tosulli2)
-Orlov, Alexei (aorlov)
-Porod, Wolfgang (porod)
-Pratt, Thomas (tpratt)
-Rouvimov, Sergei (srouvimo)
-Sauer, Ken (sauer)
-Seabaugh, Alan (aseabaug)
-Snider, Gregory (gsnider)
-Timp, Gregory (gtimp)
-Wistey, Mark (mwistey)
-Xing, Huili (hxing)
+Number of (faculty) citations in the database
+----------------------------------------------
+9599
 
 
-Number of citations in the database
------------------------------------
-4133
-
-
-Number of citations for each netid
-----------------------------------
-100|bsmith3
-100|fcastell
-100|hchang
-100|hxing
-100|owiest
-100|pbohn
-100|pkamat
-97|kareem
-95|ndovichi
-94|fein
-89|mhaenggi
-88|ghartlan
-83|mkuno
-77|pfay
-72|porod
-71|bbaker2
-71|dchen
-66|furdyna
-66|mlieberm
-65|afuentes
-63|tluo
-62|hgao
-61|dgo
-61|gbernste
-61|mchang
-61|vploplis
-59|amoukasi
-58|phelquis
-58|sptasins
-56|rroeder
-53|nchawla
-53|rtaylor
-52|mravosa
-51|srouvimo
-49|aorlov
-49|aseabaug
-48|msen
-46|b1hu
-44|wphillip
-42|gniebur
-42|sdatta
-41|pmcginn
-40|gsnider
-39|hgoodson
-39|jhicks3
-38|hlin1
-38|rguo
-36|bashfeld
-36|tcorke
-35|dcostel1
-35|jshrout
-35|wleevy
-34|cdsouzas
-34|flynn
-34|shu
-33|gcsaba
-33|jnl
-33|mniemier
-32|emichael
-31|ejumper
-30|lent
-30|lliu3
-30|sgordeye
-29|bunker
-28|zschafe1
-27|gtimp
-26|apillay
-25|hfernand
-24|bjanko
-24|kosel
-23|mwang2
-23|paolucci
-22|huang
-22|tmerluzz
-21|gtryggva
-20|tmilenko
-19|jli9
-19|jwhitme1
-18|rschulz
-17|phuber
-16|fthomas
-16|kdoudric
-16|striegel
-15|fliu2
-15|kchrist7
-15|pzorlutu
-15|showard
-15|snereti1
-15|wwang7
-14|bblagg
-14|jzartman
-14|kmatous
-14|mwistey
-14|tpratt
-13|meichi
-12|kvaughan
-12|rhughes6
-12|sschmid
-12|szhang8
-12|tfuja
-11|bhochwal
-11|hsakaue
-11|jschaef6
-10|ahoffma8
-10|ctanner
-10|ematlis
-10|jprosper
-10|rdahl1
-9|kogge
-9|mbruenin
-9|mwebber
-9|sruggier
-9|steve
-8|dhall
-8|jnahas
-8|powers
-8|roka
-8|sauer
-8|sleonov
-8|tvargogo
-8|zshi2
-7|aapraham
-7|dvural
-7|llittlep
-7|tjuliano
-7|tosulli2
-6|dnarvaez
-6|mschwarz
-5|apanopou
-5|rhill3
-5|xlu
-4|ajemcov
-4|amintair
-4|ctessier
-4|pnallath
-4|rbillo
-4|yzhang45
-3|garg
-3|jmerz
-3|zda
-2|jjones23
-2|mbrownst
-2|meskilds
-2|mroger10
-2|mtriyana
-2|nmark
-2|rmcclai1
-1|adowling
-1|cball2
-1|dchiang
-1|jbrown33
-1|jchisum
-1|mjiang2
-1|mjoshi2
-1|rdunn
-1|rnelson
-1|ywu11
+Most frequently authored netids
+--------------------------------
+100|AOLIVER2
+100|BSMITH3
+100|ED
+100|FCASTELL
+100|HCHANG
+100|OWIEST
+100|PBOHN
+100|PBURNS
+100|PKAMAT
+100|SMOBASHE
+100|WSCHNEI1
+97|KAREEM
+97|SLEE3
+95|NDOVICHI
+94|FEIN
+89|MHAENGGI
+88|GHARTLAN
+85|DSEVERSO
+83|JTANK
+83|MKUNO
+80|ASIMONET
+79|NLOBO
+78|MLEE12
+77|PFAY
+76|JFEDER
+75|DBOLSTER
+72|POROD
+72|SCORCELL
+71|BBAKER2
+71|DCHEN
+71|GLAMBERT
+71|TBEERS
+69|JCREPP
+68|XLIU2
+67|PGARNAVI
+66|FURDYNA
+66|MLIEBERM
+65|AFUENTES
+65|DHYDE
+63|GMATHEWS
+63|MFERDIG
+63|TLUO
+62|ASERIANN
+62|HGAO
+61|DBALSARA
+61|DGO
+61|GBERNSTE
+61|GLUBKE
+61|MCHANG
+61|VPLOPLIS
 
 
 Number of citations for each faculty member
 -------------------------------------------
 100|Bohn, Paul
+100|Burns, Peter
 100|Castellino, Francis
 100|Chang, Hsueh-Chia
 100|Kamat, Prashant
+100|Maginn, Edward
+100|Mobashery, Shahriar
+100|Oliver, Allen
+100|Schneider, William
 100|Smith, Bradley
 100|Wiest, Olaf
-100|Xing, Huili
 97|Kareem, Ahsan
+97|Lee, Sanghoon
 95|Dovichi, Norman
 94|Fein, Jeremy
 89|Haenggi, Martin
 88|Hartland, Gregory
+85|Severson, David
 83|Kuno, Masaru
+83|Tank, Jennifer
+80|Simonetti, Antonio
+79|Lobo, Neil
+78|Lee, Mijoon
 77|Fay, Patrick
+76|Feder, Jeffrey
+75|Bolster, Diogo
+72|Corcelli, Steven
 72|Porod, Wolfgang
 71|Baker, Brian
+71|Beers, Timothy
 71|Chen, Danny
+71|Lamberti, Gary
+69|Crepp, Justin
+68|Liu, Xinyu
+67|Garnavich, Peter
 66|Furdyna, Jacek
 66|Lieberman, Marya
 65|Fuentes, Agustin
+65|Hyde, David
+63|Ferdig, Michael
 63|Luo, Tengfei
+63|Mathews, Grant
 62|Gao, Haifeng
+62|Serianni, Anthony
+61|Balsara, Dinshaw
 61|Bernstein, Gary
 61|Chang, Mayland
 61|Go, David
+61|Lubke, Gitta
 61|Ploplis, Victoria
-59|Mukasyan, Alexander
-58|Helquist, Paul
-58|Ptasinska, Sylwia
-56|Roeder, Ryan
-53|Chawla, Nitesh
-53|Taylor, Richard
-52|Ravosa, Matthew
-51|Rouvimov, Sergei
-49|Orlov, Alexei
-49|Seabaugh, Alan
-48|Sen, Mihir
-46|Hu, Bei
-44|Phillip, William
-42|Datta, Suman
-42|Niebur, Glen
-41|McGinn, Paul
-40|Snider, Gregory
-39|Goodson, Holly
-39|Hicks, Jason
-38|Guo, Ruilan
-38|Lin, Hai
-36|Ashfeld, Brandon
-36|Corke, Thomas
-35|Costello, Daniel
-35|Leevy, W Matthew
-35|Shrout, Joshua
-34|D'Souza-Schorey, Crislyn
-34|Flynn, Patrick
-34|Hu, Xiaobo
-33|Csaba, Gyorgy
-33|Laneman, J Nicholas
-33|Niemier, Michael
-32|Michael, Edwin
-31|Jumper, Eric
-30|Gordeyev, Stanislav
-30|Lent, Craig
-30|Liu, Lei
-29|Bunker, Bruce
-28|Schafer, Zachary
-27|Timp, Gregory
-26|Pillay, Anand
-25|Fernando, Harindra
-24|Janko, Boldizsar
-24|Kosel, Thomas
-23|Paolucci, Samuel
-23|Wang, Meng
-22|Huang, Yih-Fang
-22|Merluzzi, Thomas
-21|Tryggvason, Gretar
-20|Milenkovic, Tijana
-19|Li, Jun
-19|Whitmer, Jonathan
-18|Schulz, Robert
-18|Webber, Matthew
-17|Huber, Paul
-16|Doudrick, Kyle
-16|Striegel, Aaron
-16|Thomas, Flint
-15|Christensen, Kenneth
-15|Howard, Scott
-15|Liu, Fang
-15|Neretina, Svetlana
-15|Wang, Wei
-15|Zorlutuna, Pinar
-14|Blagg, Brian
-14|Matous, Karel
-14|Pratt, Thomas
-14|Wistey, Mark
-14|Zartman, Jeremiah
-13|Shaw, Mei-Chi
-12|Fuja, Thomas
-12|Hughes, Robert
-12|Schmid, Steven
-12|Vaughan, Kevin
-12|Zhang, Siyuan
-11|Hochwald, Bertrand
-11|Sakaue, Hirotaka
-11|Schaefer, Jennifer
-10|Dahl, Richard
-10|Hoffman, Anthony
-10|Matlis, Eric
-10|Prosperi, Jenifer
-10|Tanner, Carol
-9|Bruening, Merlin
-9|Buechler, Steven
-9|Kogge, Peter
-9|Ruggiero, Steven
-8|Hall, Douglas
-8|Leonov, Sergey
-8|Nahas, Joseph
-8|Oka, Rahul
-8|Powers, Joseph
-8|Sauer, Ken
-8|Shi, Zonggao
-8|Vargo-Gogola, Tracy
-7|Aprahamian, Ani
-7|Juliano, Thomas
-7|Littlepage, Laurie
-7|O'Sullivan, Thomas
-7|Vural, Dervis
-6|Narvaez, Darcia
-6|Schwarz, Margaret
-5|Hill, Reginald
-5|Lu, Xin
-5|Panopoulos, Athanasia
-4|Billo, Richard
-4|Jemcov, Aleksandar
-4|Mintairov, Alexander
-4|Nallathamby, Prakash
-4|Tessier, Charles
-4|Zhang, Yanliang
-3|Da, Zhi
-3|Garg, Umesh
-3|Merz, James
-2|Brownstein, Michael
-2|Eskildsen, Morten
-2|Jones, Jennifer
-2|Mark, Nelson
-2|McClain, Rodney
-2|Rogers, Megan
-2|Triyana, Margaret
-1|Ball, Christopher
-1|Brown, Jessica
-1|Chiang, David
-1|Chisum, Jonathan
-1|Dowling, Alexander
-1|Dunn, Robert
-1|Jiang, Meng
-1|Joshi, Madhav
-1|Nelson, Robert
-1|Wu, Yang
 
 
-Number of citations for each faculty member in a given college (College of Science)
------------------------------------------------------------------------------------
-100|Smith, Bradley
-100|Wiest, Olaf
-95|Dovichi, Norman
-88|Hartland, Gregory
-83|Kuno, Masaru
-71|Baker, Brian
-66|Furdyna, Jacek
-66|Lieberman, Marya
-62|Gao, Haifeng
-61|Chang, Mayland
-58|Helquist, Paul
-53|Taylor, Richard
-52|Ravosa, Matthew
-39|Goodson, Holly
-36|Ashfeld, Brandon
-35|Leevy, W Matthew
-34|D'Souza-Schorey, Crislyn
-32|Michael, Edwin
-29|Bunker, Bruce
-28|Schafer, Zachary
-26|Pillay, Anand
-24|Janko, Boldizsar
-18|Schulz, Robert
-17|Huber, Paul
-14|Blagg, Brian
-13|Shaw, Mei-Chi
-12|Vaughan, Kevin
-12|Zhang, Siyuan
-10|Dahl, Richard
-10|Prosperi, Jenifer
-10|Tanner, Carol
-9|Ruggiero, Steven
-8|Shi, Zonggao
-7|Aprahamian, Ani
-7|Littlepage, Laurie
-7|Vural, Dervis
-6|Schwarz, Margaret
-5|Hill, Reginald
-5|Lu, Xin
-5|Panopoulos, Athanasia
-3|Garg, Umesh
-2|Eskildsen, Morten
-1|Brown, Jessica
-
-
-Number of citations for each faculty member in a given department (Electrical Engineering)
+Number of citations for each faculty member in a given department (Biological Sciences)
 ------------------------------------------------------------------------------------------
-100|Xing, Huili
-89|Haenggi, Martin
-77|Fay, Patrick
-72|Porod, Wolfgang
-61|Bernstein, Gary
-51|Rouvimov, Sergei
-49|Orlov, Alexei
-49|Seabaugh, Alan
-42|Datta, Suman
-40|Snider, Gregory
-38|Lin, Hai
-35|Costello, Daniel
-33|Laneman, J Nicholas
-30|Lent, Craig
-30|Liu, Lei
-27|Timp, Gregory
-24|Kosel, Thomas
-22|Huang, Yih-Fang
-15|Howard, Scott
-14|Pratt, Thomas
-14|Wistey, Mark
-12|Fuja, Thomas
-11|Hochwald, Bertrand
-10|Hoffman, Anthony
-8|Hall, Douglas
-8|Sauer, Ken
-7|O'Sullivan, Thomas
-4|Mintairov, Alexander
-3|Merz, James
-1|Chisum, Jonathan
-1|Dunn, Robert
+85|Severson, David
+83|Tank, Jennifer
+79|Lobo, Neil
+76|Feder, Jeffrey
+71|Lamberti, Gary
+65|Hyde, David
+63|Ferdig, Michael
+52|Ravosa, Matthew
+47|Pfrender, Michael
+42|Haldar, Kasturi
+39|Jones, Stuart
+39|Li, Lei
+36|McDowell, Mary
+36|Romero-Severson, Jeanne
+35|Leevy, W. Matthew
+34|Achee, Nicole
+34|D'Souza-Schorey, Crislyn
+34|Wingert, Rebecca
+32|Olson, Kenneth
+30|Chaloner, Dominic
+29|Duffield, Giles
+29|Fraser, Malcolm
+28|Schafer, Zachary
+27|Grieco, John
+26|Archie, Elizabeth
+25|Lee, Shaun
+24|McLachlan, Jason
+22|Schorey, Jeffrey
+21|O'Tousa, Joseph
+18|Rocha, Adrian
+18|Schulz, Robert
+17|Champion, Patricia
+15|Liu, Fang
+14|Clancy, James
+13|Belovsky, Gary
+13|Bhattacharjee, Souvik
+13|Hollocher, Hope
+12|Vaughan, Kevin
+12|Zhang, Siyuan
+11|Lahne, Manuela
+11|Medvigy, David
+10|Cheng, Yong
+10|Dahl, Richard
+10|Prosperi, Jenifer
+10|Sedgwick, Alanna
+9|Button-Simons, Katrina
+8|Vargo-Gogola, Tracy
+8|Whaley, Michelle
+6|Alam, Md. Suhail
+6|Moore, Sean
+5|Lu, Xin
+5|Smith, Cody
+5|Vu, Henry
+5|Xu, Xiangtao
+4|Boyd, Sunny
+4|Chadderton, William
+4|Rosenbaum, Stacy
+4|Small, Scott
+4|Vaughan, Patricia
+3|Armitage, David
+3|Koepfli, Cristian
+3|Lu, Xuemin
+3|Mecklenburg, Kirk
+3|Scheel, Molly
+2|Bilal, Shakir
+2|Howe, Erin
+2|Johnson, Ann
+2|Stark, Amy
+2|Veselik, David
+1|Cavany, Sean
+1|Conner, Henry
+1|Filchak, Kenneth
+1|Hellenthal, Barbara
+1|Kreager, Ryan
+1|Labbe, Frederic
+1|Serjanov, Dmitri
+1|Wang, Qingfei
 
 
 Top 10 journal titles
 ---------------------
-110|Applied Physics Letters
-73|IEEE Transactions on Nanotechnology
-71|Journal of Applied Physics
-68|IEEE Electron Device Letters
-68|The Journal of Physical Chemistry C
-61|AIAA Journal
-52|The Journal of Physical Chemistry Letters
-49|ACS Nano
-47|Journal of the American Chemical Society
-46|Analytical Chemistry
+198|The Astrophysical Journal
+150|Journal of the American Chemical Society
+128|The Journal of Physical Chemistry C
+109|Scientific Reports
+97|Applied Physics Letters
+94|Journal of Biological Chemistry
+93|Analytical Chemistry
+80|Journal of Applied Physics
+80|The Journal of Chemical Physics
+79|The Journal of Organic Chemistry
 
 
-Top 10 journal titles written by faculty in a given college (College of Science)
+Top 25 journal titles written by faculty in a given department (Biological Sciences)
 --------------------------------------------------------------------------------
-36|The Journal of Organic Chemistry
-35|Cancer Research
-33|Organic Letters
-28|Analytical Chemistry
-27|Journal of the American Chemical Society
-23|The Journal of Physical Chemistry Letters
-20|Nano Letters
-19|Chemical Communications
-19|PLoS ONE
-18|The Journal of Physical Chemistry C
+45|PLoS ONE
+33|Scientific Reports
+32|Cancer Research
+26|Malaria Journal
+24|BMC Genomics
+24|Freshwater Biology
+24|Journal of Biological Chemistry
+23|Proceedings of the National Academy of Sciences
+22|Parasites & Vectors
+21|Canadian Journal of Fisheries and Aquatic Sciences
+21|Journal of Visualized Experiments
+20|PLOS ONE
+17|Journal of Experimental Biology
+17|Molecular Ecology
+16|Developmental Biology
+15|Journal of the North American Benthological Society
+15|PLOS Neglected Tropical Diseases
+14|Limnology and Oceanography
+14|Science
+13|Evolution
+12|Experimental Eye Research
+11|Journal of Neuroscience
+10|Ecological Applications
+10|Journal of Geophysical Research: Biogeosciences
+10|Journal of Insect Physiology
 
 
-All about a given NetId (tfuja)
+All faculty who have published in Science or Nature
+---------------------------------------------------
+5|Crepp, Justin (Physics)
+3|Severson, David (Biological Sciences)
+3|Feder, Jeffrey (Biological Sciences)
+3|Shrader-Frechette, Kristin (Philosophy)
+3|Lehner, Nicolas (Physics)
+3|Lobo, Neil (Biological Sciences)
+2|Neal, Clive (Civil & Envr Engr & Earth Sciences)
+2|Bowman, Micayla (Chemistry and Biochemistry)
+2|Ferdig, Michael (Biological Sciences)
+2|Wiest, Olaf (Chemistry and Biochemistry)
+2|Clark, Patricia (Chemistry and Biochemistry)
+2|Garnavich, Peter (Physics)
+1|Gould, Andrew (Political Science)
+1|Jones, Andrew (Political Science)
+1|Hinkle, Christopher (Electrical Engineering)
+1|Howard, Don (Philosophy)
+1|Hyde, David (Biological Sciences)
+1|Lamberti, Gary (Biological Sciences)
+1|Mathews, Grant (Physics)
+1|Siwo, Geoffrey (Center for Research Computing)
+1|Wang, Hao (Civil & Envr Engr & Earth Sciences)
+1|Foster, James (Preprofessional Studies)
+1|Miller, Jeffrey (Accountancy)
+1|Romero-Severson, Jeanne (Biological Sciences)
+1|Shrout, Joshua (Civil & Envr Engr & Earth Sciences)
+1|Sullivan, James (Department of Economics)
+1|Tank, Jennifer (Biological Sciences)
+1|Doran, Kirk (Department of Economics)
+1|Haldar, Kasturi (Biological Sciences)
+1|Lent, Craig (Electrical Engineering)
+1|Eskildsen, Morten (Physics)
+1|Pfrender, Michael (Biological Sciences)
+1|Ravosa, Matthew (Biological Sciences)
+1|Rose, Nathan (Psychology)
+1|Helquist, Paul (Chemistry and Biochemistry)
+1|Nerenberg, Robert (Civil & Envr Engr & Earth Sciences)
+1|Bhattacharjee, Souvik (Biological Sciences)
+1|Boyd, Sunny (Biological Sciences)
+1|Corcelli, Steven (Chemistry and Biochemistry)
+1|Jones, Stuart (Biological Sciences)
+1|Kandel, S. Alex (Chemistry and Biochemistry)
+1|Milenkovic, Tijana (Computer Science and Engineering)
+1|Toroczkai, Zoltan (Physics)
+1|Wright, Timothy (Center for Research Computing)
+1|Evans, William (Department of Economics)
+1|Lu, Xin (Biological Sciences)
+1|Schultz, Zachary (Chemistry and Biochemistry)
+
+
+All about a given NetId (GBELOVSK)
 -------------------------------
 
-                 Name: Thomas Fuja <tfuja@nd.edu>
-           Department: Electrical Engineering
-              College: College of Engineering
+                 Name: Gary Belovsky <GBELOVSK@nd.edu>
+           Department: Biological Sciences
   Number of citations: 12
 
   Bibliography
 
-  * Spatially coupled sparse codes on graphs: theory and practice by Thomas Fuja in IEEE Communications Magazine (http://dx.doi.org/10.1109/mcom.2014.6852099)
+  * Grasshoppers affect grassland ecosystem functioning: Spatial and temporal variation by Gary Belovsky in Basic and Applied Ecology (http://dx.doi.org/10.1016/j.baae.2017.09.003)
 
-  * Contention-Free Interleavers for High-Throughput Turbo Decoding by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2008.050502)
+  * Impacts of harvesting on brine shrimp (Artemia franciscana) in Great Salt Lake, Utah, USA by Gary Belovsky in Ecological Applications (http://dx.doi.org/10.1890/15-0776)
 
-  * Cooperation via Trellis Pruning by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2011.050911.100303)
+  * Host dynamics determine responses to disease: additive vs. compensatory mortality in a grasshopper–pathogen system by Gary Belovsky in Ecology (http://dx.doi.org/10.1890/13-0969.1)
 
-  * Error performance analysis of signal superposition coded cooperative diversity by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2009.10.080355)
+  * Prey change behaviour with predation threat, but demographic effects vary with prey density: experiments with grasshoppers and birds by Gary Belovsky in Ecology Letters (http://dx.doi.org/10.1111/j.1461-0248.2011.01591.x)
 
-  * Ldpc codes for non-coherent block fading channels with correlation: analysis and design by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2008.050087)
+  * The Great Salt Lake Ecosystem (Utah, USA): long term data and a structural equation approach by Gary Belovsky in Ecosphere (http://dx.doi.org/10.1890/es10-00091.1)
 
-  * Low Latency Coding: Convolutional Codes vs. LDPC Codes by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2012.042712.110189)
+  * The Great Salt Lake Ecosystem (Utah, USA): long term data and a structural equation approach: Reply by Gary Belovsky in Ecosphere (http://dx.doi.org/10.1890/es13-00406.1)
 
-  * Mobile Relaying: Coverage Extension and Throughput Enhancement by Thomas Fuja in IEEE Transactions on Communications (http://dx.doi.org/10.1109/tcomm.2010.080310.090199)
+  * How Will Species Respond to Climate Change? Examining the Effects of Temperature and Population Density on an Herbivorous Insect by Gary Belovsky in Environmental Entomology (http://dx.doi.org/10.1603/en09294)
 
-  * A network coding approach to cooperative diversity by Thomas Fuja in IEEE Transactions on Information Theory (http://dx.doi.org/10.1109/tit.2007.904990)
+  * Mechanical Vectors Enhance Fungal Entomopathogen Reduction of the Grasshopper Pest Camnula pellucida (Orthoptera: Acrididae) by Gary Belovsky in Environmental Entomology (http://dx.doi.org/10.1093/ee/nvu004)
 
-  * Bandwidth- and power-efficient routing in linear wireless networks by Thomas Fuja in IEEE Transactions on Information Theory (http://dx.doi.org/10.1109/tit.2006.874520)
+  * Environmental impacts on grazing of different brine shrimp (Artemia franciscana) life stages by Gary Belovsky in Hydrobiologia (http://dx.doi.org/10.1007/s10750-016-3047-5)
 
-  * Design of Spatially Coupled LDPC Codes Over GF $(q)$ for Windowed Decoding by Thomas Fuja in IEEE Transactions on Information Theory (http://dx.doi.org/10.1109/tit.2016.2567638)
+  * Fear and loathing in a Great Lakes forest: cascading effects of competition between wolves and coyotes by Gary Belovsky in Journal of Mammalogy (http://dx.doi.org/10.1093/jmammal/gyw162)
 
-  * The Design and Performance of Distributed LT Codes by Thomas Fuja in IEEE Transactions on Information Theory (http://dx.doi.org/10.1109/tit.2007.904982)
+  * The interaction of temperature and precipitation determines productivity and diversity in a bunchgrass prairie ecosystem by Gary Belovsky in Oecologia (http://dx.doi.org/10.1007/s00442-018-4247-7)
 
-  * Capacity and Coding for Two Common Wireless Erasure Relay Networks with Optimal Bandwidth Allocation by Thomas Fuja in IEEE Transactions on Wireless Communications (http://dx.doi.org/10.1109/twc.2012.092512111404)
+  * Abiotic effects on the clear-winged grasshopper (Orthoptera: Acridae) and its fungal pathogen Entomophaga grylli (Entomophthorales: Entomophthoraceae) in an intermountain bunch-grass prairie by Gary Belovsky in The Canadian Entomologist (http://dx.doi.org/10.4039/tce.2016.66)
 
 
 --
 Eric Lease Morgan <emorgan@nd.edu>
-January 13, 2019
+February 5, 2019
 
 
