@@ -7,7 +7,7 @@ This is a set of simple & example reports that have be applied to the API Taskfo
 
 Number of records in the database
 ----------------------------------
-21681
+20938
 
 
 Count & tabulate different types of people
@@ -15,43 +15,42 @@ Count & tabulate different types of people
 8797|Undergrad Student
 4738|Staff
 4083|Grad Student
-3059|Faculty
+2316|Faculty
 647|Retired Staff
 357|Retired Faculty
 
 
 A random list of faculty
 ------------------------
-McAward, Jennifer (JMASON3)
-Foster, James (JFOSTER4)
-Jin, Renxi (RJIN)
-Selking, Amber (ALATTNER)
-Lieberman, Marya (MLIEBERM)
-Gabriel, Charles (CGABRIE4)
-Bodnaruk, Andriy (ABODNARU)
-Roeder, Ryan (RROEDER)
-Clements, Walter (WCLEMENT)
-Branco, Rachel (RBRANCO)
-Muller-Itten, Michele (MMULLERI)
-Martinkus, Caitlin (CMARTINK)
-Fernandez-Armesto, Felipe (FFERNAN2)
-Howk, Jay (JHOWK)
-Triyana, Margaret (MTRIYANA)
-Alexandrou, Nahid Erfan (NERFAN)
-Morris, Karen (KMORRIS)
-Milani, Kenneth (KMILANI)
-McDonnell, Erin (EMCDONN2)
-Garnavich, Peter (PGARNAVI)
-Vivirito, Patrick (PVIVIRIT)
-Blad, Alessia (ABLAD)
-Elmore, Maggie (MELMORE)
-Assaf, Badih (BASSAF)
-Ganesan, Shankar (SGANESAN)
+Zhao, Zifeng (ZZHAO2)
+McCrea, Barry (BMCCREA1)
+Rosenthal, Dale (DROSENTH)
+Kuehn, Robert (RKUEHN2)
+Morrell, Jodene (JMORRELL)
+Doerries, Mark (MDOERRIE)
+Mangione-Lora, Elena (EMANGION)
+Cole, Clayton (CCOLE2)
+Armentrout, Charles (CARMENTR)
+Smith, David (DSMITH11)
+Badertscher, Brad (BBADERTS)
+Gondoli, Dawn (DGONDOLI)
+Berke, Melissa (MBERKE)
+Maciejczyk, John (JMACIEJC)
+Kim, Yerin (YKIM23)
+Wang, Guiquan (GWANG4)
+Dietz, Elizabeth (EWHITE)
+Mechtenberg, Abigail (AMECHTEN)
+Stevens, Christopher (CSTEVEN6)
+Camosy, Raymond (RCAMOSY2)
+Bergstrom, Tracy (TBERGSTR)
+Wilkie, James (JWILKIE)
+Meyers, Natalie (NMUNN)
+Rath, Michael (MRATH2)
+Hagaman, Scott (HAGAMAN)
 
 
 Number of faculty in each department
 ------------------------------------
-797|Electrical Engineering
 120|Biological Sciences
 119|Dean's Office-Law School
 118|Chemistry and Biochemistry
@@ -66,6 +65,7 @@ Number of faculty in each department
 58|Political Science
 56|Computer Science and Engineering
 56|Management & Organization
+54|Electrical Engineering
 54|Mathematics
 53|Chemical and Biomolecular Engr
 51|Romance Languages and Literatures
@@ -176,36 +176,36 @@ Number of faculty in each department
 
 Random list of faculty in a given department (Biological Sciences)
 ------------------------------------------------------------------
-Fraley, Gregg (GFRALEY)
-O'reilly, Katherine (KOREILL2)
-Egan, Bailee (BEGAN3)
-Kern, Marcia (MKERN)
-Archer, William (WARCHER)
-Levendusky, Jaclyn (JLEVENDU)
+Leoce, Brian (BLEOCE)
+Silver, Bryan (BSILVER)
+Calvillo, Valentin (VCALVILL)
+Mecklenburg, Kirk (KMECKLEN)
+Rohr, Jason (JROHR2)
 Cronin, Rachel (RCRONIN1)
-LaBar, Madelyn (MLABAR)
-Grieco, John (JGRIECO)
-Oshiro, Hana (HOSHIRO)
-Nixon, Jordan (JNIXON)
-Anthuvan, Jacob (JANTHUVA)
-Lee, Davin (DLEE27)
-Cloghessy, Kaylee (KCLOGHES)
-Lee, Joseph (JLEE73)
-Conner, Henry (HCONNER)
-Licursi, Matthew (MLICURSI)
-Guinness, Andrew (AGUINNES)
-Tran, Quan (QTRAN4)
-Blakely, Bethany (BBLAKELY)
-Koepfli, Cristian (CKOEPFLI)
-Hollocher, Hope (HHOLLOCH)
-Osunnuga, Love (LOSUNNUG)
-Moon, Kyle (KMOON2)
-Knapik, Patricia (PKNAPIK)
+Green, Lauren (LGREEN3)
+Curasi, Salvatore (SCURASI)
+Kern, Marcia (MKERN)
+Rocco, Rachel (RROCCO)
+Davis, Sage (SDAVIS13)
+Hardart, Kent (KHARDART)
+Hiller, Morgan (MHILLER)
+Kim, Patricia (PKIM7)
+Wang, Michelle (MWANG9)
+Checkley Needham, Lisa (LCHECKL1)
+Boyd, Patrick (PBOYD1)
+Armitage, David (DARMITAG)
+Kodak, Haley (HKODAK)
+Duffield, Giles (GDUFFIEL)
+Kerner, Elizabeth (EKERNER)
+Alexandrova, Maria (MALEXAN9)
+Vu, Henry (HVU)
+Malik, Eva (EMALIK)
+Blake, Andrew (ABLAKE3)
 
 
 Number of (faculty) citations in the database
 ----------------------------------------------
-9599
+9603
 
 
 Most frequently authored netids
@@ -385,6 +385,7 @@ Number of citations for each faculty member in a given department (Biological Sc
 2|Bilal, Shakir
 2|Howe, Erin
 2|Johnson, Ann
+2|Labbe, Frederic
 2|Stark, Amy
 2|Veselik, David
 1|Cavany, Sean
@@ -392,20 +393,19 @@ Number of citations for each faculty member in a given department (Biological Sc
 1|Filchak, Kenneth
 1|Hellenthal, Barbara
 1|Kreager, Ryan
-1|Labbe, Frederic
 1|Serjanov, Dmitri
 1|Wang, Qingfei
 
 
 Top 10 journal titles
 ---------------------
-198|The Astrophysical Journal
+199|The Astrophysical Journal
 150|Journal of the American Chemical Society
 128|The Journal of Physical Chemistry C
 109|Scientific Reports
 97|Applied Physics Letters
+94|Analytical Chemistry
 94|Journal of Biological Chemistry
-93|Analytical Chemistry
 80|Journal of Applied Physics
 80|The Journal of Chemical Physics
 79|The Journal of Organic Chemistry
