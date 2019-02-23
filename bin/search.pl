@@ -3,14 +3,13 @@
 # search.pl - command-line interface to search a solr instance
 
 # Eric Lease Morgan <emorgan@nd.edu>
-# February 23, 2019 - first cut
+# February 23, 2019 - first cut; based on other work
 
 
 # configure
 use constant ROWS       => 3;
 use constant SOLR       => 'http://localhost:8983/solr/citations';
 use constant FACETFIELD => ( 'facet_author', 'facet_title_journal', 'facet_department' );
-
 
 # require
 use strict;
@@ -81,7 +80,6 @@ for my $doc ( $response->docs ) {
 	print "\n";
 
 }
-
 
 # done
 exit;

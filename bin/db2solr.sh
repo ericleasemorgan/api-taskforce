@@ -6,7 +6,7 @@
 # February 23, 2019 - first cut
 
 
-SQL="select b.bid from bibliographics as b, faculty as f where ( f.department is 'Biological Sciences' OR f.department is 'Physics' OR f.department is 'Chemistry and Biochemistry' ) AND b.doi > '' AND f.netid is b.netid ORDER by f.netid;"
+SQL="SELECT b.bid FROM bibliographics AS b, faculty AS f WHERE b.doi > '' AND f.netid IS b.netid ORDER BY f.netid;"
 DATABASE='./etc/library.db'
 DB2SOLR='./bin/db2solr.pl'
 

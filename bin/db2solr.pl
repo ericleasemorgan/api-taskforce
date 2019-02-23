@@ -24,9 +24,10 @@ if ( ! $bid ) { die "Usage: $0 <bid>\n" }
 my $database = DATABASE;
 my $driver   = DRIVER; 
 my $dbh      = DBI->connect( "DBI:$driver:dbname=$database", '', '', { RaiseError => 1 } ) or die $DBI::errstr;
+binmode( STDOUT, ':utf8' );
 
-# find the given title
-my $handle = $dbh->prepare( qq(SELECT b.*, f.department FROM bibliographics as b, faculty as f WHERE b.bid='$bid' AND ( f.netid is b.netid) ;) );
+# find the given citation
+my $handle = $dbh->prepare( qq(SELECT b.*, f.department FROM bibliographics AS b, faculty AS f WHERE b.bid='$bid' AND ( f.netid IS b.netid ) ;) );
 $handle->execute() or die $DBI::errstr;
 
 # process each record
@@ -42,7 +43,6 @@ while ( my $results = $handle->fetchrow_hashref ) {
 	my $department    = $$results{ 'department' };
 	
 	# debug; dump
-	binmode( STDOUT, ':utf8' );
 	warn "         bid: $bid\n";
 	warn "      author: $author\n";
 	warn "        date: $date\n";

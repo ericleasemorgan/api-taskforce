@@ -28,28 +28,29 @@ To "play" the suite, the following "score" is provided, but like any performance
   * `./bin/resolve.sh` - acquire bibliographic data assoicated with each DOI
   * `./bin/bibliographics2db.sh` - update the database accordingly
   
-### Fourth Movement - "Finale"
+### Fourth Movement - "The Reports"
   * `cat ./etc/reports.sql | sqlite3 ./etc/library.db` - generate a set of reports against the database, and a sample report is located at [etc/report.txt](./etc/report.txt)
+  * `./bin/db2solr.sh` - after using `./etc/schema.xml` to configure &amp; start-up a Solr instance, index the bibliographics
+  * `./bin/search.pl` - query the index
+
+## To do
+There are a number of things to do, listed in no priority order:
  
- ## To do
- There are a number of things to do, listed in no priority order:
- 
-   * create a more accurate &amp; comprehensive list of faculty
-   * create a terminal-based Solr interface
    * create a Web-based Solr interface
    * do author disambiguation
-   * index the database's content with Solr
-   * learn how to limit citation (author) searches to Notre Dame only
+   * refine the indexing process
+   * refine the list of faculty &amp; staff
+   * refine the terminal-based Solr interface
    * save more-comprehensive bibliographic data
    * tweak the Second Movement so the SID is shared between processes
    * write "one script to rule the all"; make everything go with one command
    * other duties as assigned
   
- ## Epilogue
+## Epilogue
 
 *"Writing a system of software can be as creative as writing a symphony."*
 
 ---
 Eric Lease Morgan &lt;emorgan@nd.edu&gt;  
-January 13, 2019
+February 23, 2019
 
