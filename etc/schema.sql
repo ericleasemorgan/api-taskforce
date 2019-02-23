@@ -9,7 +9,7 @@
 
 -- faculty
 create table faculty (
-    id          INTEGER PRIMARY KEY,
+    fid         INTEGER PRIMARY KEY,
     netid       TEXT,
     firstname   TEXT,
     lastname    TEXT,
@@ -19,6 +19,7 @@ create table faculty (
 
 -- bibliographics
 create table bibliographics (
+    bid            INTEGER PRIMARY KEY,
     authors        TEXT,
     date           TEXT,
     doi            TEXT,

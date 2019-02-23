@@ -5,8 +5,9 @@
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
-# January 11, 2019 - first cut but need to escape the input
-# January 12, 2019 - moved to update, but still need to escape input
+# January  11, 2019 - first cut but need to escape the input
+# January  12, 2019 - moved to update, but still need to escape input
+# February 23, 2019 - skipped over empty netid's
 
 
 # configure
@@ -34,6 +35,9 @@ while read RECORD; do
 	NETID="${FIELDS[8]}"
 	EMAIL="${FIELDS[9]}"
 	
+	# do not process null identifiers
+	if [[ -z $NETID ]]; then continue; fi
+
 	# escape
 	DEPARTMENT=$( echo $DEPARTMENT | sed "s/'/''/g" )
 	FIRST_NAME=$( echo $FIRST_NAME | sed "s/'/''/g" )

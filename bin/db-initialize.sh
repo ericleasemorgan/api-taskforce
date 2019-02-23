@@ -23,7 +23,10 @@ while read RECORD; do
 	# parse
 	FIELDS=($RECORD)
 	NETID="${FIELDS[8]}"
-		
+	
+	# do not process null identifiers
+	if [[ -z $NETID ]]; then continue; fi
+	
 	# re-initialize, debug, and update
 	SQL="INSERT INTO faculty ( 'netid' ) VALUES ( '$NETID' );"
 	echo $SQL >&2
