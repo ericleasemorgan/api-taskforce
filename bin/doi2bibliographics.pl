@@ -5,7 +5,8 @@
 # Eric Lease Morgan <emorgan@nd.edu>
 # (c) University of Notre Dame; distributed under a GNU Public License
 
-# January 12, 2019 - fist cut
+# January  12, 2019 - first cut
+# February 24, 2019 - added some error checking; this script could be "server-ized" and thus sped up
 
 
 # configure
@@ -23,7 +24,7 @@ if ( ! $netid or ! $doi ) { die "Usage: $0 <netid> <doi>\n" }
 # initialize
 my $useragent = LWP::UserAgent->new;
 my $request   = HTTP::Request->new( GET => RESOLVER . "/$doi" );
-$request->header(Accept => MIMETYPE );
+$request->header( Accept => MIMETYPE );
 
 # request the data
 my $response = $useragent->request( $request );
@@ -40,12 +41,14 @@ if ( $response->is_success ) {
 	$content    =~ s/\n+//g;
 	$content    =~ s/> </></g;
 	
-	# output
-	print join( "\t", ( $netid, $doi, $link, $content ) ) . "\n";
+	# output, conditionally
+	if ( $content ) { print join( "\t", ( $netid, $doi, $link, $content ) ) . "\n" }
+	else { warn "Content error: No RDF found in $doi\n" }
 	
 }
 
-else { warn $response->content }
+# HTTP error
+else { warn "HTTP error for $doi: " . $response->content }
 
 # done
 exit;

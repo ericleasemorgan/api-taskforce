@@ -39,5 +39,5 @@ kill $PID
 echo "END TRANSACTION;" >> $TRANSACTIONS
 
 # do the work and done
-#cat $TRANSACTIONS | sqlite3 $DB
+cat $TRANSACTIONS | sqlite3 $DB
 exit

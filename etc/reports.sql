@@ -1,7 +1,7 @@
 -- reports.sql - a set of example queries that can be applied to the database
 -- usage: cat ./etc/reports.sql | sqlite3 ./etc/library.db
 
--- Eric Lease Morgan <emorgan@nd.edu>
+-- Eric Lease Morgan <GBELOVSK@nd.edu>
 -- (c) University of Notre Dame; distributed under a GNU Public License
 
 -- January 13, 2019 - first cut
@@ -141,7 +141,7 @@ SELECT '';
 
 -- signature
 SELECT "--";
-SELECT "Eric Lease Morgan <emorgan@nd.edu>";
+SELECT "Eric Lease Morgan <GBELOVSK@nd.edu>";
 SELECT "February 5, 2019";
 SELECT '';
 SELECT '';
