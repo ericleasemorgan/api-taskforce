@@ -203,56 +203,76 @@ sub template {
 	<input type='submit' value='Search' />
 	</form>
 
-<p>Don't know what to search for? Try any one of these department queries:</p>
-<p>
- * <a href='./index.cgi?query=department:"Accountancy"'>Accountancy</a>
- * <a href='./index.cgi?query=department:"Aerospace and Mechanical Engr"'>Aerospace and Mechanical Engr</a>
- * <a href='./index.cgi?query=department:"American Studies"'>American Studies</a>
- * <a href='./index.cgi?query=department:"Anthropology"'>Anthropology</a>
- * <a href='./index.cgi?query=department:"Art, Art History, and Design"'>Art, Art History, and Design</a>
- * <a href='./index.cgi?query=department:"Biological Sciences"'>Biological Sciences</a>
- * <a href='./index.cgi?query=department:"Center for Low Energy Systems Tech"'>Center for Low Energy Systems Tech</a>
- * <a href='./index.cgi?query=department:"Center for Research Computing"'>Center for Research Computing</a>
- * <a href='./index.cgi?query=department:"Chemical and Biomolecular Engr"'>Chemical and Biomolecular Engr</a>
- * <a href='./index.cgi?query=department:"Chemistry and Biochemistry"'>Chemistry and Biochemistry</a>
- * <a href='./index.cgi?query=department:"Classics"'>Classics</a>
- * <a href='./index.cgi?query=department:"Clinical Law Center"'>Clinical Law Center</a>
- * <a href='./index.cgi?query=department:"Computer Science and Engineering"'>Computer Science and Engineering</a>
- * <a href='./index.cgi?query=department:"Department of Economics"'>Department of Economics</a>
- * <a href='./index.cgi?query=department:"ESTEEM Graduate Program"'>ESTEEM Graduate Program</a>
- * <a href='./index.cgi?query=department:"East Asian Languages and Cultures"'>East Asian Languages and Cultures</a>
- * <a href='./index.cgi?query=department:"Eck Institute for Global Health"'>Eck Institute for Global Health</a>
- * <a href='./index.cgi?query=department:"Economics and Policy Studies"'>Economics and Policy Studies</a>
- * <a href='./index.cgi?query=department:"Electrical Engineering"'>Electrical Engineering</a>
- * <a href='./index.cgi?query=department:"English"'>English</a>
- * <a href='./index.cgi?query=department:"Finance"'>Finance</a>
- * <a href='./index.cgi?query=department:"Global Health Masters"'>Global Health Masters</a>
- * <a href='./index.cgi?query=department:"Harper Cancer Research Institute"'>Harper Cancer Research Institute</a>
- * <a href='./index.cgi?query=department:"Hesburgh Libraries"'>Hesburgh Libraries</a>
- * <a href='./index.cgi?query=department:"History"'>History</a>
- * <a href='./index.cgi?query=department:"IT Analytics and Operations"'>IT Analytics and Operations</a>
- * <a href='./index.cgi?query=department:"Inst for Educational Initiatives"'>Inst for Educational Initiatives</a>
- * <a href='./index.cgi?query=department:"Kaneb Ctr for Teaching and Learning"'>Kaneb Ctr for Teaching and Learning</a>
- * <a href='./index.cgi?query=department:"Keough School of Global Affairs"'>Keough School of Global Affairs</a>
- * <a href='./index.cgi?query=department:"Marketing"'>Marketing</a>
- * <a href='./index.cgi?query=department:"Mathematics"'>Mathematics</a>
- * <a href='./index.cgi?query=department:"ND Environmental Change Initiative"'>ND Environmental Change Initiative</a>
- * <a href='./index.cgi?query=department:"ND Integrated Imaging Facility"'>ND Integrated Imaging Facility</a>
- * <a href='./index.cgi?query=department:"ND NANO"'>ND NANO</a>
- * <a href='./index.cgi?query=department:"Notre Dame Research"'>Notre Dame Research</a>
- * <a href='./index.cgi?query=department:"Philosophy"'>Philosophy</a>
- * <a href='./index.cgi?query=department:"Physics"'>Physics</a>
- * <a href='./index.cgi?query=department:"Political Science"'>Political Science</a>
- * <a href='./index.cgi?query=department:"Preprofessional Studies"'>Preprofessional Studies</a>
- * <a href='./index.cgi?query=department:"Program of Liberal Studies"'>Program of Liberal Studies</a>
- * <a href='./index.cgi?query=department:"Provost Office"'>Provost Office</a>
- * <a href='./index.cgi?query=department:"Psychology"'>Psychology</a>
- * <a href='./index.cgi?query=department:"Radiation Laboratory"'>Radiation Laboratory</a>
- * <a href='./index.cgi?query=department:"Sociology"'>Sociology</a>
- * <a href='./index.cgi?query=department:"Turbomachinery Facility"'>Turbomachinery Facility</a>
- * <a href='./index.cgi?query=department:"UNDERC"'>UNDERC</a>
- * <a href='./index.cgi?query=department:"WM Keck Ctr for Transgene Research"'>WM Keck Ctr for Transgene Research</a>
+<p>Don't know what to search for? Try any of these queries:</p>
 
+<p>
+<a href='./index.cgi?query="breast cancer"'>breast cancer</a>
+ • <a href='./index.cgi?query="data"'>data</a>
+ • <a href='./index.cgi?query="interlayer exchange coupling"'>interlayer exchange coupling</a>
+ • <a href='./index.cgi?query="molecular beam epitaxy"'>molecular beam epitaxy</a>
+ • <a href='./index.cgi?query="molecular dynamics"'>molecular dynamics</a>
+ • <a href='./index.cgi?query="molecular"'>molecular</a>
+ • <a href='./index.cgi?query="synthesis"'>synthesis</a>
+ • <a href='./index.cgi?query="tandem mass spectrometry"'>tandem mass spectrometry</a>
+ • <a href='./index.cgi?query="topology optimization"'>topology optimization</a>
+</p>
+<p>Try these searches for specific journals:</p>
+<p>
+<a href='./index.cgi?query=title_journal:"The Astrophysical Journal"'>The Astrophysical Journal</a>
+ • <a href='./index.cgi?query=title_journal:"IEEE Transactions on Nanotechnology"'>IEEE Transactions on Nanotechnology</a>
+ • <a href='./index.cgi?query=title_journal:"Journal of Computational Physics"'>Journal of Computational Physics</a>
+ • <a href='./index.cgi?query=title_journal:"Journal of Structural Engineering"'>Journal of Structural Engineering</a>
+ • <a href='./index.cgi?query=title_journal:"Journal of the American Chemical Society"'>Journal of the American Chemical Society</a>
+</p>
+<p>Or these department queries:</p>
+<p>
+<a href='./index.cgi?query=department:"Accountancy"'>Accountancy</a>
+ • <a href='./index.cgi?query=department:"Aerospace and Mechanical Engr"'>Aerospace and Mechanical Engr</a>
+ • <a href='./index.cgi?query=department:"American Studies"'>American Studies</a>
+ • <a href='./index.cgi?query=department:"Anthropology"'>Anthropology</a>
+ • <a href='./index.cgi?query=department:"Art, Art History, and Design"'>Art, Art History, and Design</a>
+ • <a href='./index.cgi?query=department:"Biological Sciences"'>Biological Sciences</a>
+ • <a href='./index.cgi?query=department:"Center for Low Energy Systems Tech"'>Center for Low Energy Systems Tech</a>
+ • <a href='./index.cgi?query=department:"Center for Research Computing"'>Center for Research Computing</a>
+ • <a href='./index.cgi?query=department:"Chemical and Biomolecular Engr"'>Chemical and Biomolecular Engr</a>
+ • <a href='./index.cgi?query=department:"Chemistry and Biochemistry"'>Chemistry and Biochemistry</a>
+ • <a href='./index.cgi?query=department:"Classics"'>Classics</a>
+ • <a href='./index.cgi?query=department:"Clinical Law Center"'>Clinical Law Center</a>
+ • <a href='./index.cgi?query=department:"Computer Science and Engineering"'>Computer Science and Engineering</a>
+ • <a href='./index.cgi?query=department:"Department of Economics"'>Department of Economics</a>
+ • <a href='./index.cgi?query=department:"ESTEEM Graduate Program"'>ESTEEM Graduate Program</a>
+ • <a href='./index.cgi?query=department:"East Asian Languages and Cultures"'>East Asian Languages and Cultures</a>
+ • <a href='./index.cgi?query=department:"Eck Institute for Global Health"'>Eck Institute for Global Health</a>
+ • <a href='./index.cgi?query=department:"Economics and Policy Studies"'>Economics and Policy Studies</a>
+ • <a href='./index.cgi?query=department:"Electrical Engineering"'>Electrical Engineering</a>
+ • <a href='./index.cgi?query=department:"English"'>English</a>
+ • <a href='./index.cgi?query=department:"Finance"'>Finance</a>
+ • <a href='./index.cgi?query=department:"Global Health Masters"'>Global Health Masters</a>
+ • <a href='./index.cgi?query=department:"Harper Cancer Research Institute"'>Harper Cancer Research Institute</a>
+ • <a href='./index.cgi?query=department:"Hesburgh Libraries"'>Hesburgh Libraries</a>
+ • <a href='./index.cgi?query=department:"History"'>History</a>
+ • <a href='./index.cgi?query=department:"IT Analytics and Operations"'>IT Analytics and Operations</a>
+ • <a href='./index.cgi?query=department:"Inst for Educational Initiatives"'>Inst for Educational Initiatives</a>
+ • <a href='./index.cgi?query=department:"Kaneb Ctr for Teaching and Learning"'>Kaneb Ctr for Teaching and Learning</a>
+ • <a href='./index.cgi?query=department:"Keough School of Global Affairs"'>Keough School of Global Affairs</a>
+ • <a href='./index.cgi?query=department:"Marketing"'>Marketing</a>
+ • <a href='./index.cgi?query=department:"Mathematics"'>Mathematics</a>
+ • <a href='./index.cgi?query=department:"ND Environmental Change Initiative"'>ND Environmental Change Initiative</a>
+ • <a href='./index.cgi?query=department:"ND Integrated Imaging Facility"'>ND Integrated Imaging Facility</a>
+ • <a href='./index.cgi?query=department:"ND NANO"'>ND NANO</a>
+ • <a href='./index.cgi?query=department:"Notre Dame Research"'>Notre Dame Research</a>
+ • <a href='./index.cgi?query=department:"Philosophy"'>Philosophy</a>
+ • <a href='./index.cgi?query=department:"Physics"'>Physics</a>
+ • <a href='./index.cgi?query=department:"Political Science"'>Political Science</a>
+ • <a href='./index.cgi?query=department:"Preprofessional Studies"'>Preprofessional Studies</a>
+ • <a href='./index.cgi?query=department:"Program of Liberal Studies"'>Program of Liberal Studies</a>
+ • <a href='./index.cgi?query=department:"Provost Office"'>Provost Office</a>
+ • <a href='./index.cgi?query=department:"Psychology"'>Psychology</a>
+ • <a href='./index.cgi?query=department:"Radiation Laboratory"'>Radiation Laboratory</a>
+ • <a href='./index.cgi?query=department:"Sociology"'>Sociology</a>
+ • <a href='./index.cgi?query=department:"Turbomachinery Facility"'>Turbomachinery Facility</a>
+ • <a href='./index.cgi?query=department:"UNDERC"'>UNDERC</a>
+ • <a href='./index.cgi?query=department:"WM Keck Ctr for Transgene Research"'>WM Keck Ctr for Transgene Research</a>
 </p>
  
 	##RESULTS##
